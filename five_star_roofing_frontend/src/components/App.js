@@ -3,9 +3,8 @@ import '../assets/sass/main.sass'
 
 function App() {
   return (
-    <div className="App">
+    <div className="five-star-roofing-app">
       <div className="pz-responsivnes-indicator"></div>
-      hello
     </div>
   )
 }
