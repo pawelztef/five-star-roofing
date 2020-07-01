@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/sass/main.sass'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const HomePage = () => <h2>HomePage</h2>
 const AboutPage = () => <h2>AboutPage</h2>
@@ -17,13 +17,23 @@ class App extends React.Component {
         <div className="pz-responsivnes-indicator"></div>
 
         <Router>
-          <div>
-            <Route exact path="/" component={HomePage}></Route>
-            <Route exact path="/about" component={AboutPage}></Route>
-            <Route exact path="/services" component={ServicesPage}></Route>
-            <Route exact path="/gallery" component={GalleryPage}></Route>
-            <Route exact path="/contact" component={ContactPage}></Route>
-          </div>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route exact path="/about">
+              <AboutPage />
+            </Route>
+            <Route exact path="/services">
+              <ServicesPage />
+            </Route>
+            <Route exact path="/gallery">
+              <GalleryPage />
+            </Route>
+            <Route exact path="/contact">
+              <ContactPage />
+            </Route>
+          </Switch>
         </Router>
 
       </div>
