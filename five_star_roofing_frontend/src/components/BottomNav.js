@@ -34,7 +34,6 @@ class BottomNav extends React.Component {
     return(
       <Nav className="pz-nav__bottom-row">
         <div className="pz-container-wrapper">
-          <Brand />
           <MenuWrapper className="pz-invisible-md">
             <MainMenu />
           </MenuWrapper>
