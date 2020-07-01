@@ -1,13 +1,14 @@
 .pz-footer
   display: flex
   justify-content: space-between
-  margin-top: 120px
-  margin-bottom: 100px
-
+  margin-top: 100px
+  margin-bottom: 50px
+  font-size: 1.2em
   &__col-1
 
   &__col-2
-    .pz-contact-details
+    .pz-contact-details, a
+      font-size: 1.2rem
       h6
         padding: 0
         margin: 0
@@ -19,12 +20,20 @@
      span 
        h6
          display: inline
+
 .pz-footer-meta
   padding: 15px
-  color: $fsr-0
+  color: $fsr-wt
   background: $fsr-1
+  text-transform: uppercase
+  font-family: $font-first
   a
-    color: $fsr-2
+    color: $fsr-4
+    font-family: $font-first
+    font-weight: bold
+    margin-left: 5px
+    &:hover
+      color: white
 
   span, a
     font-size: 1rem
