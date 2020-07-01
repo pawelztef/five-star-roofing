@@ -6,6 +6,7 @@
   justify-content: space-between
   align-items: center
   padding: 0
+  margin: 0
 
   a
     color: black
@@ -20,12 +21,18 @@
     list-style: 0
     font-size: 0.75rem
     padding: .5rem 1rem .4rem 1rem
+    a
+      color: $fsr-0
     &:hover
       text-decoration: none
       background: $fsr-0
+      a
+        color: $fsr-1
 
   &__item-active
     background: $fsr-0
+    a
+      color: $fsr-1
 
 
 @include media-tablet-landscape

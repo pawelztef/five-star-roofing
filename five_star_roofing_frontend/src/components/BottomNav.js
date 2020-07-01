@@ -22,7 +22,7 @@ class BottomNav extends React.Component {
   render(props){
     return(
       <nav className="pz-nav__bottom-row">
-          <div className="pz-nav_bottom-row_content">
+          <div className="pz-nav__bottom-row_content">
             <div className="pz-container">
               <MainMenu />
               <BurgerButton click={this.props.mobileMenuToggleHandler} />
