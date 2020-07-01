@@ -27,15 +27,17 @@ class App extends React.Component {
 
   render() {
     return (
-
     <div className="five-star-roofing-app">
+    <div className="pz-responsivnes-indicator"></div>
+
       <Router>
         <div className="pz-body-wrapper">
-          <div className="pz-responsivnes-indicator"></div>
+
+          <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
+          <MobileNav show={this.state.mobileMenuOpen}
+            click={this.mobileMenuToggleHandler} />
+
           <div className="pz-page-wrapper">
-            <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
-            <MobileNav show={this.state.mobileMenuOpen}
-              click={this.mobileMenuToggleHandler} />
             <Switch>
               <Route exact path="/">
                 <HomePage />
@@ -54,11 +56,12 @@ class App extends React.Component {
               </Route>
             </Switch>
           </div>
-        </div>
-        <Footer />
-      </Router>
-    </div>
 
+          <Footer />
+        </div>
+      </Router>
+
+    </div>
     )
   }
 }
