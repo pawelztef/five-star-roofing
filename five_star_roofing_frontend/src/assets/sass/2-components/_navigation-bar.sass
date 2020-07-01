@@ -1,0 +1,88 @@
+.pz-nav__fixed
+  position: fixed
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  top: 0
+
+.pz-nav__top-row
+  background-color: $fsr-3
+  color: $fsr-1
+  font-family: $font-second
+
+  .pz-container-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    svg
+      position: relative
+      bottom: 2px
+      color: black
+
+.pz-nav__bottom-row
+  background-color: white
+  z-index: 9
+  width: 100%
+  top: 0
+
+  .pz-container-wrapper
+    display: flex
+    justify-content: space-between
+
+    .pz-nav__appointment-button
+      margin-bottom: 0
+      @include media-desktop
+        font-size: 0.8rem
+        padding: 20px 18px
+
+.pz-nav__contact-details
+  span:last-of-type
+    padding-right: 20px
+    border-right: 1px black solid
+    svg
+      margin-right: 10px
+
+
+.pz-nav__burger-button
+  background-color: $fsr-1
+
+.pz-nav__mobile-nav
+  position: fixed
+  display: flex
+  flex-direction: column
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: $fsr-1
+  width: 100%
+  height: 100%
+  z-index: 1000000
+  transform: translateY(-300%)
+  transition: transform .5s ease-out
+  overflow: scroll 
+  .pz-social-list
+    margin-bottom: 100px
+
+
+.pz-nav__mobile-nav.open
+  transform: translateY(0)
+
+
+
+.pz-nav__mobile-nav-close
+  font-size: 26px
+  color: white
+  text-align: right
+  margin: 20px 30px
+
+
+
+@include media-desktop
+
+@include media-tablet-landscape
+
+@include media-tablet-portrait
+   
+@include media-phone

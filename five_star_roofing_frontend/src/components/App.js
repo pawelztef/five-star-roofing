@@ -1,6 +1,8 @@
 import React from 'react'
 import '../assets/sass/main.sass'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import NavigationBar from './NavigationBar'
+import MobileNav from './MobileNav'
 
 const HomePage = () => <h2>HomePage</h2>
 const AboutPage = () => <h2>AboutPage</h2>
@@ -11,6 +13,17 @@ const ContactPage = () => <h2>ContactPage</h2>
 
 class App extends React.Component {
 
+  state = {
+    mobileMenuOpen: false
+  }
+
+  mobileMenuToggleHandler = () => {
+    this.setState((prevState) => {
+      console.log('App.mobileMenuToggleHandler prevState', prevState)
+      return { mobileMenuOpen: !prevState.mobileMenuOpen }
+    })
+  }
+
   render() {
     return (
 
@@ -19,6 +32,13 @@ class App extends React.Component {
         <div className="pz-body-wrapper">
           <div className="pz-responsivnes-indicator"></div>
           <div className="pz-page-wrapper">
+            <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
+            <MobileNav show={this.state.mobileMenuOpen}
+              click={this.mobileMenuToggleHandler} />
+
+
+
+
             <Switch>
               <Route exact path="/">
                 <HomePage />
