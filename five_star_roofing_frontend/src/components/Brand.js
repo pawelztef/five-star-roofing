@@ -5,7 +5,7 @@ export default function Brand(props) {
   <a className="pz-nav__brand"
     href={process.env.REACT_APP_DOMAIN}>
     <img className="pz-nav__brand-img" 
-      src="images/logo-small.png"
+      src="images/logo.png"
       alt="Five Star Roofing Logo" />
   </a>
   )

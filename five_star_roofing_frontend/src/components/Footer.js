@@ -45,6 +45,11 @@ const footer = () => (
 
       </div>
     </div>
+    <div className="pz-footer-meta">
+      <span>
+        Designed by <a href="https://pawelztef.me">IrishWebsites.ie</a>
+      </span>
+    </div>
   </footer>
 )
 

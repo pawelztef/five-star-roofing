@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="181.94574"
-   height="89.61599"
-   viewBox="0 0 48.13981 23.710897"
+   width="250"
+   height="123.1356"
+   viewBox="0 0 66.145832 32.579626"
    version="1.1"
    id="svg3248"
-   inkscape:export-filename="/home/pawel/projects/react/five_star_roofing/five_star_roofing_graphics/logo-final.png"
+   inkscape:export-filename="/home/pawel/projects/react/five_star_roofing/five_star_roofing_graphics/logo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -29,9 +29,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1880859"
-     inkscape:cx="223.55503"
-     inkscape:cy="-166.96937"
-     inkscape:document-units="mm"
+     inkscape:cx="223.55502"
+     inkscape:cy="-166.96935"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
@@ -60,10 +60,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.4141093,-271.74325)">
+     transform="translate(-3.4141096,-262.87453)">
     <g
        id="g1507"
-       transform="matrix(0.46521353,0,0,0.46521353,-7.0127127,233.96032)">
+       transform="matrix(0.63922013,0,0,0.63922013,-10.912719,210.95942)">
       <flowRoot
          transform="scale(0.26458333)"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:1.25;font-family:'Distortion Dos Digital';-inkscape-font-specification:'Distortion Dos Digital, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"

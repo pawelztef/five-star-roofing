@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiMapPin2Line, RiPhoneLine, RiTimeLine } from "react-icons/ri"
+import { MdSmartphone, MdLocalPhone, MdPlace, MdAccessTime, MdEmail } from "react-icons/md"
 import Brand from './Brand'
 
 export default function TopNav() {
@@ -10,13 +10,13 @@ export default function TopNav() {
             <Brand />
             <div className="pz-nav__top-row_contact-details">
               <span>
-                <RiMapPin2Line /> Dublin
+                <MdPlace /> <a href="#">Dublin</a> | <MdEmail /> <a href="mailto: fivestarrroffig@gmail.com">fivestarrroffig@gmail.com</a>
               </span>
               <span>
-                <RiPhoneLine /> 0873539296 | (01) 9120916
+                <MdSmartphone /> 24 Hour Service - <a href="tel:00353873539296">+353 (0)87 3539296</a> | <MdLocalPhone /> Office Line - <a href="tel:0035319120916">+353 (0)1 912 09 16</a>
               </span>
               <span>
-                <RiTimeLine /> Mon - Sun: 24h
+                <MdAccessTime /> Mon - Sun: 24h
               </span>
             </div>
           </div>
