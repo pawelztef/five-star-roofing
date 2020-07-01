@@ -3,6 +3,8 @@ import '../assets/sass/main.sass'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import NavigationBar from './NavigationBar'
 import MobileNav from './MobileNav'
+import Footer from './Footer'
+import EmptySpace from './EmptySpace'
 
 const HomePage = () => <h2>HomePage</h2>
 const AboutPage = () => <h2>AboutPage</h2>
@@ -26,19 +28,16 @@ class App extends React.Component {
 
   render() {
     return (
-
     <div className="five-star-roofing-app">
+    <div className="pz-responsivnes-indicator"></div>
+
       <Router>
         <div className="pz-body-wrapper">
-          <div className="pz-responsivnes-indicator"></div>
+
+          <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
+          <MobileNav show={this.state.mobileMenuOpen}
+            click={this.mobileMenuToggleHandler} />
           <div className="pz-page-wrapper">
-            <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
-            <MobileNav show={this.state.mobileMenuOpen}
-              click={this.mobileMenuToggleHandler} />
-
-
-
-
             <Switch>
               <Route exact path="/">
                 <HomePage />
@@ -57,10 +56,25 @@ class App extends React.Component {
               </Route>
             </Switch>
           </div>
+
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <EmptySpace />
+          <Footer />
         </div>
       </Router>
-    </div>
 
+    </div>
     )
   }
 }
