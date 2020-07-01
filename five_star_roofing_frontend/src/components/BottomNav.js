@@ -1,18 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import Brand from './Brand'
 import MainMenu from './MainMenu'
 import BurgerButton from './BurgerButton'
-
-const Nav = styled.nav`
-  padding-bottom: 1.8em;
-  padding-top: 1.8em;
-`
-
-const MenuWrapper = styled.div`
-  display: flex;
-  align-items: inherit;
-`
 
 class BottomNav extends React.Component {
 
@@ -32,14 +21,14 @@ class BottomNav extends React.Component {
 
   render(props){
     return(
-      <Nav className="pz-row pz-nav__bottom-row">
+      <nav className="pz-row pz-nav__bottom-row">
         <div className="pz-container">
           <div className="pz-nav_bottom-row_content">
             <MainMenu />
             <BurgerButton click={this.props.mobileMenuToggleHandler} />
           </div>
         </div>
-      </Nav>
+      </nav>
     )
   }  
 }
