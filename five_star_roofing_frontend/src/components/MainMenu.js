@@ -12,9 +12,6 @@ export default function MainMenu() {
         <Link to="/services">Services</Link>
       </li>
       <li className="pz-menu__item"> 
-        <Link to="/team">Team</Link>
-      </li>
-      <li className="pz-menu__item"> 
         <Link to="/gallery">Gallery</Link>
       </li>
       <li className="pz-menu__item">

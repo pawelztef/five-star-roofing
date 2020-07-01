@@ -1,18 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const BrandHref = styled.a`
-`
-const BrandImage = styled.img`
-  max-height: 50px;
-`
 
 export default function Brand(props) {
   return(
-  <BrandHref className="pz-nav__brand"
+  <a className="pz-nav__brand"
     href={process.env.REACT_APP_DOMAIN}>
-    <BrandImage className="pz-nav__brand-img" 
-      src="http://muji.ancorathemes.com/wp-content/uploads/2017/12/logo_retina.png"/>
-  </BrandHref>
+    <img className="pz-nav__brand-img" 
+      src="images/logo-small.png"
+      alt="Five Star Roofing Logo" />
+  </a>
   )
 }

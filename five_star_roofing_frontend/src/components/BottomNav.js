@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Brand from './Brand'
-import AppointmentButton from './AppointmentButton'
 import MainMenu from './MainMenu'
 import BurgerButton from './BurgerButton'
 
@@ -39,7 +38,6 @@ class BottomNav extends React.Component {
           <MenuWrapper className="pz-invisible-md">
             <MainMenu />
           </MenuWrapper>
-          <AppointmentButton />
           <BurgerButton click={this.props.mobileMenuToggleHandler} />
         </div>
       </Nav>
