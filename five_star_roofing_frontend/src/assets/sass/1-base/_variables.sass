@@ -1,0 +1,72 @@
+/* Color Theme Swatches in Hex */
+$fsr-0: #D9D9D9
+$fsr-1: #5F96B8
+$fsr-2: #3E6278
+$fsr-3: #73B5DE
+$fsr-4: #1D2E38
+
+/* Color Theme Swatches in RGBA */
+$fsr-0-rgba: rgba(217,217,217, 1)
+$fsr-1-rgba: rgba(95,150,184, 1)
+$fsr-2-rgba: rgba(62,98,120, 1)
+$fsr-3-rgba: rgba(115,181,222, 1)
+$fsr-4-rgba: rgba(29,46,56, 1)
+
+
+$media-phone: 576px
+$media-tablet-portrait: 768px
+$media-tablet-landscape: 992px
+$media-tablet-desktop: 1200px
+
+@mixin media-phone
+  @media (max-width: $media-phone)
+    @content 
+
+@mixin media-tablet-portrait 
+  @media (max-width: $media-tablet-portrait)
+    @content 
+
+@mixin media-tablet-landscape 
+  @media (max-width: $media-tablet-landscape)
+    @content 
+
+@mixin media-desktop 
+  @media (max-width: $media-tablet-desktop)
+    @content 
+
+%responsivnes-indicator
+  position: fixed
+  font-size: .8rem
+  z-index: 999
+  top: 1rem
+  left: 1rem
+  &:before
+    @include media-desktop
+      content: "max-width 1200px"
+      color: blue
+    @include media-tablet-landscape
+      content: "max-width 992px"
+      color: green
+    @include media-tablet-portrait
+      content: "max-width 768px"
+      color: yellow
+    @include media-phone
+      content: "max-width 576px"
+      color: red
+
+
+// example: @include placeholder-color(#333);
+
+@mixin placeholder-style($property, $value)
+  &.placeholder
+    #{$property}: $value
+  &:-moz-placeholder
+    #{$property}: $value
+  &::-webkit-input-placeholder
+    #{$property}: $value
+  &:-ms-input-placeholder
+    #{$property}: $value
+  
+
+
+
