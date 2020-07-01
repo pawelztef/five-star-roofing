@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function MainMenu() {
   return(
-    <ul className="pz-menu">
+    <ul className="pz-menu pz-invisible-md">
       <li className="pz-menu__item pz-menu__item-active"> 
         <Link to="/">Home</Link>
       </li>

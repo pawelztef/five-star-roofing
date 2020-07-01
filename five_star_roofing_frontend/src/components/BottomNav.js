@@ -32,12 +32,12 @@ class BottomNav extends React.Component {
 
   render(props){
     return(
-      <Nav className="pz-nav__bottom-row">
-        <div className="pz-container-wrapper">
-          <MenuWrapper className="pz-invisible-md">
+      <Nav className="pz-row pz-nav__bottom-row">
+        <div className="pz-container">
+          <div className="pz-nav_bottom-row_content">
             <MainMenu />
-          </MenuWrapper>
-          <BurgerButton click={this.props.mobileMenuToggleHandler} />
+            <BurgerButton click={this.props.mobileMenuToggleHandler} />
+          </div>
         </div>
       </Nav>
     )
