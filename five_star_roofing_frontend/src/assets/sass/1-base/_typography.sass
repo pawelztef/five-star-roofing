@@ -1,27 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Syncopate:wght@400;700&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap")
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap')
 
-$font-second: 'FrankRuhlLibre', serif
-$font-third: 'Mrs Saint Delafield', cursive
-$font-fourth: 'Josefin Sans', sans-serif
+$f1: "Source Sans Pro", sans-serif 
+$f2: "Roboto", sans-serif
+$f3: "Montserrat", sans-serif
+$f4: "Syncopate", sans-serif 
 
-%serif-font
-  font-family: $font-second
-  font-weight: bold
-
-%script-font
-  font-family: $font-third
-  font-weight: 400
-
-%sans-serif-font
-  font-family: $font-fourth
-  font-weight: 400
-
+$font-first: $f1
+$font-second: $f2
+$font-third: $f3
 
 
 h1, h2, h3, h4, h5, h6
   margin-bottom: .5rem
+  font-family: $font-first
+  font-weight: 700
 
 h1
   font-size: 4.25rem
@@ -31,7 +25,6 @@ h1
   @include media-phone
 
 h2
-  @extend %serif-font
   font-size: 3.75rem
   @include media-desktop
   @include media-tablet-landscape
@@ -39,7 +32,6 @@ h2
   @include media-phone
 
 h3
-  @extend %script-font
   font-size: 3rem
   text-transform: capitalize
   @include media-desktop
@@ -66,7 +58,6 @@ h5
   @include media-phone
 
 h6
-  @extend %sans-serif-font
   font-size: 0.8rem
   text-transform: uppercase
   font-weight: bold
@@ -80,7 +71,11 @@ h6
     font-size: 2.5rem
 
 a
+  color: $fsr-bl
+  text-decoration: none
   font-size: .9rem
+  font-family: $font-third
+  &:hover
   @include media-desktop
   @include media-tablet-landscape
   @include media-tablet-portrait
