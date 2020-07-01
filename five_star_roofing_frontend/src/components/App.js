@@ -15,6 +15,17 @@ class App extends React.Component {
     return (
       <div className="five-star-roofing-app">
         <div className="pz-responsivnes-indicator"></div>
+
+        <Router>
+          <div>
+            <Route exact path="/" component={HomePage}></Route>
+            <Route exact path="/about" component={AboutPage}></Route>
+            <Route exact path="/services" component={ServicesPage}></Route>
+            <Route exact path="/gallery" component={GalleryPage}></Route>
+            <Route exact path="/contact" component={ContactPage}></Route>
+          </div>
+        </Router>
+
       </div>
     )
   }
