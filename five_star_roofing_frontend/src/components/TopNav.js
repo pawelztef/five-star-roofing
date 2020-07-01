@@ -1,8 +1,5 @@
 import React from 'react'
-import variables from '../assets/sass/1-base/_variables.sass'
-import styled from 'styled-components'
 import { RiMapPin2Line, RiPhoneLine } from "react-icons/ri"
-import SocialList from './SocialList'
 
 const Nav = styled.nav`
   font-size: .9rem;
@@ -27,7 +24,6 @@ export default function TopNav() {
             <RiPhoneLine /> 0 (800) 123-456
           </span>
         </ContactDetials>
-        <SocialList />
       </div>
     </Nav>
   )
