@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/sass/main.sass'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 const HomePage = () => <h2>HomePage</h2>
 const AboutPage = () => <h2>AboutPage</h2>
