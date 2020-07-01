@@ -14,10 +14,11 @@ class App extends React.Component {
   render() {
     return (
 
-      <div className="five-star-roofing-app">
-        <Router>
-          <div className="pz-body-wrapper">
-            <div className="pz-responsivnes-indicator"></div>
+    <div className="five-star-roofing-app">
+      <Router>
+        <div className="pz-body-wrapper">
+          <div className="pz-responsivnes-indicator"></div>
+          <div className="pz-page-wrapper">
             <Switch>
               <Route exact path="/">
                 <HomePage />
@@ -36,8 +37,9 @@ class App extends React.Component {
               </Route>
             </Switch>
           </div>
-        </Router>
-      </div>
+        </div>
+      </Router>
+    </div>
 
     )
   }
