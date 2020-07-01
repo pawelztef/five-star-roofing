@@ -13,33 +13,34 @@ class App extends React.Component {
 
   render() {
     return (
+
       <div className="five-star-roofing-app">
-        <div className="pz-responsivnes-indicator"></div>
-
         <Router>
-          <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route exact path="/about">
-              <AboutPage />
-            </Route>
-            <Route exact path="/services">
-              <ServicesPage />
-            </Route>
-            <Route exact path="/gallery">
-              <GalleryPage />
-            </Route>
-            <Route exact path="/contact">
-              <ContactPage />
-            </Route>
-          </Switch>
+          <div className="pz-body-wrapper">
+            <div className="pz-responsivnes-indicator"></div>
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route exact path="/about">
+                <AboutPage />
+              </Route>
+              <Route exact path="/services">
+                <ServicesPage />
+              </Route>
+              <Route exact path="/gallery">
+                <GalleryPage />
+              </Route>
+              <Route exact path="/contact">
+                <ContactPage />
+              </Route>
+            </Switch>
+          </div>
         </Router>
-
       </div>
+
     )
   }
-
 }
 
 export default App
