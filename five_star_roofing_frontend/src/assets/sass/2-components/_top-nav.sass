@@ -18,3 +18,15 @@
     .pz-contact-details-item:first-of-type
       display: none
 
+
+@include media-desktop
+@include media-tablet-landscape
+  .pz-nav__top-row_content
+    .pz-contact-details
+      .pz-contact-details-item, a
+        margin: 3px 
+        font-size: 1rem
+@include media-tablet-portrait
+  .pz-nav__top-row_content
+    justify-content: center
+@include media-phone

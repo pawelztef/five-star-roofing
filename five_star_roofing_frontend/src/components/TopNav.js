@@ -9,7 +9,9 @@ export default function TopNav() {
         <div className="pz-container">
           <div className="pz-nav__top-row_content">
             <Brand />
-            <ContactDetails />
+            <div className="pz-nav__top-row_contact-details-wrapper pz-invisible-md">
+              <ContactDetails />
+            </div>
           </div>
         </div>
     </nav>
