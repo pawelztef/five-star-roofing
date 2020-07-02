@@ -1,0 +1,32 @@
+.pz-nav-buttons
+  &__wrapper
+    margin: 20px 0
+    width: 100%
+    display: none
+  &__container
+    display: flex
+    flex-direction: row
+    a
+      flex-grow: 1
+      text-transform: uppercase
+      color: $fsr-wt
+      background: $fsr-1
+      padding: 10px 50px
+      &:first-of-type
+        margin-right: 5px
+      svg
+        margin-right: 5px
+        position: relative
+        top: 2px
+
+@include media-desktop
+@include media-tablet-landscape
+@include media-tablet-portrait
+  .pz-nav-buttons
+    &__wrapper
+      display: flex
+      flex-direction: column
+@include media-phone
+  .pz-nav-buttons
+    &__container a
+      padding: 10px 40px
