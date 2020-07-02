@@ -6,7 +6,7 @@ import ContactDetails from './ContactDetails'
 
 export default function TopNav() {
   return (
-    <nav className="pz-row pz-nav__top-row">
+    <nav className="pz-nav__top-row">
         <div className="pz-container">
           <div className="pz-nav__top-row_content">
             <NavButtons />
