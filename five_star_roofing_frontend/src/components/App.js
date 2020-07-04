@@ -7,7 +7,7 @@ import Footer from './Footer'
 import EmptySpace from './EmptySpace'
 
 import HomePage from './HomePage'
-const AboutPage = () => <h2>AboutPage</h2>
+import AboutPage from './AboutPage'
 const ServicesPage= () => <h2>ServicesPage</h2>
 const GalleryPage = () => <h2>GalleryPage</h2>
 const ContactPage = () => <h2>ContactPage</h2>
