@@ -10,7 +10,7 @@ import HomePage from './HomePage'
 import AboutPage from './AboutPage'
 import ServicesPage from './ServicesPage'
 import GalleryPage from './GalleryPage'
-const GalleryPage = () => <h2>GalleryPage</h2>
+import ContactPage from './ContactPage'
 const ContactPage = () => <h2>ContactPage</h2>
 
 
