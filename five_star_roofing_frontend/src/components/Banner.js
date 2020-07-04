@@ -1,14 +1,22 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const Banner = () => {
+const Banner = (props) => {
   return(
     <div className="pz-banner__wrapper">
       <div className="pz-container pz-banner__container">
         <h1 className="pz-banner__title">
-          Five Star Roofing provide best quality service around Dublin
+          {props.bannerTitle}
         </h1>
-        <p className="pz-banner__subtitle">ask for more details</p>
-        <button className="pz-banner__button">Request a free quote</button>
+        <p className="pz-banner__subtitle">
+          {props.bannerSubtitle}
+        </p>
+        <NavLink 
+          exact
+          className="pz-banner__button"
+          to={props.bannerLink}>
+          {props.bannerCallToAction}
+        </NavLink>
       </div>
     </div>
   )
