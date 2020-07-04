@@ -8,7 +8,7 @@ import EmptySpace from './EmptySpace'
 
 import HomePage from './HomePage'
 import AboutPage from './AboutPage'
-const ServicesPage= () => <h2>ServicesPage</h2>
+import ServicesPage from './ServicesPage'
 const GalleryPage = () => <h2>GalleryPage</h2>
 const ContactPage = () => <h2>ContactPage</h2>
 
