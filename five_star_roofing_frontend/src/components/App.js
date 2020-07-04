@@ -6,7 +6,7 @@ import MobileNav from './MobileNav'
 import Footer from './Footer'
 import EmptySpace from './EmptySpace'
 
-const HomePage = () => <h2>HomePage</h2>
+import HomePage from './HomePage'
 const AboutPage = () => <h2>AboutPage</h2>
 const ServicesPage= () => <h2>ServicesPage</h2>
 const GalleryPage = () => <h2>GalleryPage</h2>
