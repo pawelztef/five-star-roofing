@@ -9,9 +9,9 @@ class BottomNav extends React.Component {
     const nav = document.querySelector('.pz-nav__bottom-row')
     const topOfBottomNav = nav.offsetTop
     window.addEventListener('scroll', () => {
-      if(window.scrollY >= topOfBottomNav+99) {
+      if(window.scrollY >= topOfBottomNav+10) {
         nav.classList.add('pz-nav__fixed')
-        document.body.style.paddingTop = (nav.offsetHeight - 5) + "px"
+        document.body.style.paddingTop = (nav.offsetHeight - 10) + "px"
       } else {
         nav.classList.remove('pz-nav__fixed')
         document.body.style.paddingTop = 0
