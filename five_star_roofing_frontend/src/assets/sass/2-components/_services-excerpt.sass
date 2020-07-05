@@ -1,0 +1,49 @@
+.pz-services-excerpt
+  &__wrapper
+    background: lighten($fsr-0, 11%)
+  &__row
+    .pz-container
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        width: 80%
+        flex-direction: column 
+      @include media-phone
+
+      .pz-card-wrapper
+        margin-bottom: 40px
+        flex: 0 0 35%
+        @include media-desktop
+        @include media-tablet-landscape
+        @include media-tablet-portrait
+        @include media-phone
+
+        .pz-card
+          &__item
+            margin: 0 20px
+          &__image
+            width: 100% 
+            max-width: 300px
+            height: auto
+          &__content
+            display: flex
+            flex-direction: column
+            justify-content: center
+            margin-top: 30px
+            @include media-desktop
+            @include media-tablet-landscape
+            @include media-tablet-portrait
+            @include media-phone
+            span
+              margin-bottom: 5px
+              &::before
+                content: "•  "
+
+  &__title
+    font-size: 3rem
+    text-transform: uppercase
+    color: $fsr-4
+

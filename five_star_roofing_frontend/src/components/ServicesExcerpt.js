@@ -6,16 +6,16 @@ class ServicesExceprt extends React.Component {
   render(){
     const objects = [
       {
-        icon: "instalation.jpg",
-        content: "<li><li>List item</li></li>"
+        icon: "new-roof.jpg",
+        content: "<span>New roof installation</span><span>Roof & attic insulation</span><span>Fascia & sofit</span><span>Tiling & slating</span>"
       },
       {
         icon: "flat-roof.jpg",
-        content: ""
+        content: "<span>Roof repairs & replacements</span><span>Home maintenance & restorations</span><span>Flat roof repair</span><span>Asbestos removal</span>"
       },
       {
-        icon: "instalation2.jpg",
-        content: ""
+        icon: "gutters.png",
+        content: "<span>Gutter instalations & repairs</span><span>PVC Dowpipes</span><span>Chimney repairs</span><span>Felt roofs</span>"
       }
     ]
 

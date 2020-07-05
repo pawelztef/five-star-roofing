@@ -58,16 +58,6 @@ class App extends React.Component {
           </div>
 
           <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
-          <EmptySpace />
           <Footer />
         </div>
       </Router>
