@@ -11,7 +11,6 @@ import AboutPage from './AboutPage'
 import ServicesPage from './ServicesPage'
 import GalleryPage from './GalleryPage'
 import ContactPage from './ContactPage'
-const ContactPage = () => <h2>ContactPage</h2>
 
 
 class App extends React.Component {
