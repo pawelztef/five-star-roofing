@@ -1,0 +1,23 @@
+.pz-widget
+  &__wrapper
+    background: $fsr-2
+  &__row
+    .pz-container
+       display: flex
+       flex-direction: row
+       justify-content: space-around
+       background: $fsr-2
+
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      flex-direction: column
+    @include media-phone
+
+  &__card
+    display: flex
+    flex-direction: column
+
+  &__icon
+    font-size: 5rem
+    color: darken($fsr-0, 2%)
