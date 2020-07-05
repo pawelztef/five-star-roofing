@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
-
+import CardsWidget from './CardsWidget'
+import BackgroundImage from '../assets/images/banner-bg.jpg'
 
 class HomePage extends React.Component{
   render(){
@@ -12,7 +13,10 @@ class HomePage extends React.Component{
         bannerSubtitle="ask for more details"
         bannerCallToAction="Request a free quote"
         bannerLink="/contact"
+        bannerImage={BackgroundImage}
       />
+
+      <CardsWidget />
 
       </>
     )
