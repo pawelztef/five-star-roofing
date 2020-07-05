@@ -1,31 +1,45 @@
 import React from 'react'
+import parse from 'html-react-parser'
 
-const Card = (props) => {
-  let img
-  try {
-    img = require(`../assets/images/${props.card.icon}`)
-  } catch (e) {
-    console.log(e)
+
+class Card extends React.Component {
+
+  constructor(props) {
+    super(props)
+    let image
+    try {
+      image = require(`../assets/images/${props.card.icon}`)
+    } catch (e) {
+      console.log(e)
+    }
+    this.state = {
+      img: image,
+      title: props.card.title,
+      content: props.card.content
+    }
   }
+
+
+render() {
   return(
    <div className="pz-card-wrapper" >
      <div className="pz-card__item">
-
-        { img &&
-        <img src={img} className="pz-card__image" /> 
+        { this.state.img &&
+          <img src={this.state.img} className="pz-card__image" /> 
         }
-        { props.card.title &&
-          <h5 className="pz-card__title">{props.card.title}</h5>
+        { this.state.title &&
+          <h5 className="pz-card__title">{this.props.card.title}</h5>
         }
-        { props.card.content &&
+        { this.state.content &&
           <p className="pz-card__content">
-            {props.card.content}
+            {parse(this.state.content)}
           </p>
         }
 
       </div>
    </div>
   )
+}
 }
 
 export default Card
