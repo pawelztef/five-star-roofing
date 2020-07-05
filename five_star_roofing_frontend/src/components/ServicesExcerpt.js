@@ -6,19 +6,16 @@ class ServicesExceprt extends React.Component {
   render(){
     const objects = [
       {
-        icon: "pitched-roof.svg",
-        title: "Pitched Roofs",
-        content: "Whether you’re looking for a completely new pitched-roof, or repair to an existing one, we guarantee a sound service from start to finish"
+        icon: "instalation.jpg",
+        content: "<li><li>List item</li></li>"
       },
       {
-        icon: "flat-roof.svg",
-        title: "Flat Roofs",
-        content: "We have expert knowledge in high performance roofing systems including single ply roofing, traditional felt and fiberglass roofing" 
+        icon: "flat-roof.jpg",
+        content: ""
       },
       {
-        icon: "felt-roof.svg",
-        title: "Felt Roofs",
-        content: "We can install polymer modified mastic asphalt, built up felt roofing systems, single membrane, hot melt rubber such as permaquik 6100 liquid plastic roofing"
+        icon: "instalation2.jpg",
+        content: ""
       }
     ]
 
@@ -29,11 +26,11 @@ class ServicesExceprt extends React.Component {
     })
 
     return(
-      <div className="pz-services-exceprt__wrapper">
+      <div className="pz-services-excerpt__wrapper">
         <EmptySpace small />
-        <h1 className="pz-services-exceprt__title">Services</h1>
+        <h1 className="pz-services-excerpt__title">Services</h1>
         <EmptySpace small />
-        <div className="pz-services-exceprt__row">
+        <div className="pz-services-excerpt__row">
           <div className="pz-container">
             { cards }
           </div>
