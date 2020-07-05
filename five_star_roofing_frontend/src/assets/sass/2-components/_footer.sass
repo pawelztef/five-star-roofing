@@ -1,35 +1,88 @@
+.pz-footer__wrapper
+  background: lighten($fsr-0, 11%)
+  color: $fsr-4
 .pz-footer
   display: flex
   justify-content: space-between
-  margin-top: 120px
-  margin-bottom: 100px
-
+  margin-top: 80px
+  margin-bottom: 50px
+  font-size: 1.2em
   &__col-1
-
+    flex: 1 1 0
   &__col-2
+    flex: 2 1 0 
+
+    .pz-contact-details__wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+
     .pz-contact-details
+      color: darken($fsr-1, 10%)
+      align-items: flex-start
+
+      &-item
+        margin-bottom: 10px
+        &:last-of-type
+          display: none
+
+        a, span
+          font-size: 1rem
+          letter-spacing: .8px
+
       h6
         padding: 0
         margin: 0
 
   &__col-3
-   .pz-opening-hours
-     display: flex
-     flex-direction: column
-     span 
-       h6
-         display: inline
+    flex: 1 1 0
+    .pz-footer__office-hours_wrapper
+      display: flex
+      justify-content: flex-end
+    .pz-footer__office-hours
+      text-align: left
+      span
+        display: block 
+        font-size: 1rem
+        h6
+          font-size: 1rem
+          display: inline
+          padding: 0
+          margin: 0
+          color: $fsr-1
+
 .pz-footer-meta
   padding: 15px
-  color: $fsr-0
+  color: $fsr-wt
   background: $fsr-1
+  text-transform: uppercase
+  font-family: $font-first
   a
-    color: $fsr-2
+    color: $fsr-4
+    font-family: $font-first
+    font-weight: bold
+    margin-left: 5px
+    &:hover
+      color: white
 
   span, a
     font-size: 1rem
 
 @include media-desktop
+  .pz-footer
+    &__col-2
+      .pz-contact-details
+        &-item
+          a, span
+            font-size: .9rem
+            letter-spacing: initial
+    &__col-3
+      .pz-footer__office-hours
+        span
+          font-size: .9rem
+          h6
+            font-size: .9rem
+
 @include media-tablet-landscape
 @include media-tablet-portrait
   .pz-footer
@@ -39,7 +92,20 @@
     justify-content: space-between
 
     &__col-1
+      .pz-nav__brand-img
+        width: 60%  
+        margin-bottom: 30px
 
     &__col-2
+      margin-bottom: 30px
+      .pz-contact-details
+        align-items: center 
 
     &__col-3
+      margin-bottom: 30px
+      .pz-footer__office-hours_wrapper
+        justify-content: center
+        .pz-footer__office-hours
+          text-align: center
+          span
+            margin-bottom: 5px

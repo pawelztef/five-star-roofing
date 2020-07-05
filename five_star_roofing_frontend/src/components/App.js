@@ -6,11 +6,11 @@ import MobileNav from './MobileNav'
 import Footer from './Footer'
 import EmptySpace from './EmptySpace'
 
-const HomePage = () => <h2>HomePage</h2>
-const AboutPage = () => <h2>AboutPage</h2>
-const ServicesPage= () => <h2>ServicesPage</h2>
-const GalleryPage = () => <h2>GalleryPage</h2>
-const ContactPage = () => <h2>ContactPage</h2>
+import HomePage from './HomePage'
+import AboutPage from './AboutPage'
+import ServicesPage from './ServicesPage'
+import GalleryPage from './GalleryPage'
+import ContactPage from './ContactPage'
 
 
 class App extends React.Component {
@@ -57,8 +57,6 @@ class App extends React.Component {
             </Switch>
           </div>
 
-          <EmptySpace />
-          <EmptySpace />
           <EmptySpace />
           <EmptySpace />
           <EmptySpace />

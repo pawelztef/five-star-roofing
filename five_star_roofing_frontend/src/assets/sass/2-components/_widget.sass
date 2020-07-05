@@ -1,0 +1,16 @@
+.pz-widget
+  &__wrapper
+    background: $fsr-2
+  &__row
+    .pz-container
+       display: flex
+       flex-direction: row
+       justify-content: space-around
+       background: $fsr-2
+       @include media-desktop
+       @include media-tablet-landscape
+       @include media-tablet-portrait
+         flex-direction: column
+         width: 80%
+    @include media-phone
+

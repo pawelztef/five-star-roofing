@@ -1,0 +1,29 @@
+.pz-card
+  &__item
+    display: flex
+    flex-direction: column
+    padding: 0 5px
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      margin-top: 60px
+      &:first-of-type
+        margin-top: 0
+    @include media-phone
+  &__image
+    width: 50px
+    margin: 0 auto 
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      width: 80px
+    @include media-phone
+  &__title
+    color: $fsr-4
+  &__content
+    color: $fsr-4
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      margin-bottom: 60px
+    @include media-phone

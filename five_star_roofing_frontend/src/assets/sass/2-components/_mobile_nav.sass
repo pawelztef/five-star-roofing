@@ -1,0 +1,37 @@
+.pz-nav__mobile-nav
+  position: fixed
+  display: flex
+  flex-direction: column
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: $fsr-1
+  width: 100%
+  height: 100%
+  z-index: 9 
+  transform: translateY(-300%)
+  transition: transform .5s ease-out
+  overflow: scroll 
+  .pz-social-list
+    margin-bottom: 100px
+
+
+.pz-nav__mobile-nav.open
+  transform: translateY(0)
+
+.pz-nav__mobile-nav-close
+  font-size: 26px
+  color: white
+  text-align: right
+  margin: 20px 30px
+
+
+
+@include media-desktop
+
+@include media-tablet-landscape
+
+@include media-tablet-portrait
+   
+@include media-phone
