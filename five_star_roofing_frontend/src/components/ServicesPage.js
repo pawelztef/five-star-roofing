@@ -1,5 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
+import Services from './Services'
+import EmptySpace from './EmptySpace'
 import BackgroundImage from '../assets/images/banner-bg.jpg'
 
 class ServicesPage extends React.Component{
@@ -14,6 +16,8 @@ class ServicesPage extends React.Component{
         bannerLink="/contact"
         bannerImage={BackgroundImage}
       />
+
+      <Services />
 
       </>
     )
