@@ -7,44 +7,44 @@ class Services extends React.Component {
   render(){
     const objects = [
       {
-        icon: "money-euro-circle-line.svg",
-        title: "Best Prices",
-        content: "Here at Five Star Roofing we have a wide range of services all available for a competitive price"
+        icon: "pitched-roof.svg",
+        title: "Pitched Roofs",
+        content: "Whether you’re looking for a completely new pitched-roof, or repair to an existing one, we guarantee a sound service from start to finish"
       },
       {
-        icon: "worker.svg",
-        title: "Experienced Team",
-        content: "Our team here at Five Star Roofing have multiple years of practical experience within this industry"
+        icon: "flat-roof.svg",
+        title: "Flat Roofs",
+        content: "We have expert knowledge in high performance roofing systems including single ply roofing, traditional felt and fiberglass roofing" 
       },
       {
-        icon: "shield-star-line.svg",
-        title: "Trustworthy Staff",
-        content: "Five Star Roofing is a member of the National Guild of Master Craftsman, our roofers can be trusted"
+        icon: "felt-roof.svg",
+        title: "Felt Roofs",
+        content: "We can install polymer modified mastic asphalt, built up felt roofing systems, single membrane, hot melt rubber such as permaquik 6100 liquid plastic roofing"
       },
       {
-        icon: "medal-line.svg",
-        title: "Quality Services",
-        content: "Each of our services are completed by a team of professional tradesmen who are all fully qualified"
+        icon: "tiling-roof.svg",
+        title: "Tiling and Slating",
+        content: "We have installed the following roof coverings: Cotswold stone slates, Collyweston stone slates, Hamstone slates, Purbeck stone slates, Clay and more"
       },
       {
-        icon: "money-euro-circle-line.svg",
-        title: "Best Prices",
-        content: "Here at Five Star Roofing we have a wide range of services all available for a competitive price"
+        icon: "tools.svg",
+        title: "Gutter Repair",
+        content: "We can assess the condition of the gutters to determine if there is any minor work required, which could include repairs such as leaking gutter joints"
       },
       {
-        icon: "worker.svg",
-        title: "Experienced Team",
-        content: "Our team here at Five Star Roofing have multiple years of practical experience within this industry"
+        icon: "roof-maintenance.svg",
+        title: "Roof Maintenance",
+        content: "With the right maintenance, a roof can last a lifetime. Regular cleaning and inspections allow for any problems to be spotted early and dealt with quickly and easily"
       },
       {
-        icon: "shield-star-line.svg",
-        title: "Trustworthy Staff",
-        content: "Five Star Roofing is a member of the National Guild of Master Craftsman, our roofers can be trusted"
+        icon: "tools-2.svg",
+        title: "Roof Repair",
+        content: "Our roof engineers have a keen eye for spotting potential problems. As a result we can act quickly before damp or mould becomes a serious problem"
       },
       {
-        icon: "medal-line.svg",
-        title: "Quality Services",
-        content: "Each of our services are completed by a team of professional tradesmen who are all fully qualified"
+        icon: "roof-insulation.svg",
+        title: "Roof Insulations",
+        content: " A lot of heat escapes through the roof therefore it’s wise to make sure that you take actions to keep it in saving massive quantities on your bills."
       }
     ]
 
