@@ -7,17 +7,10 @@
        flex-direction: row
        justify-content: space-around
        background: $fsr-2
-
-    @include media-desktop
-    @include media-tablet-landscape
-    @include media-tablet-portrait
-      flex-direction: column
+       @include media-desktop
+       @include media-tablet-landscape
+       @include media-tablet-portrait
+         flex-direction: column
+         width: 80%
     @include media-phone
 
-  &__card
-    display: flex
-    flex-direction: column
-
-  &__icon
-    font-size: 5rem
-    color: darken($fsr-0, 2%)

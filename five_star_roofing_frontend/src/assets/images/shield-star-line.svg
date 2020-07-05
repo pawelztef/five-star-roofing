@@ -11,11 +11,11 @@
    width="24"
    height="24"
    version="1.1"
-   id="svg1177"
-   sodipodi:docname="money-euro-circle-line.svg"
+   id="svg132"
+   sodipodi:docname="shield-star-line.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata1183">
+     id="metadata138">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs1181" />
+     id="defs136" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -39,7 +39,7 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1918"
      inkscape:window-height="1059"
-     id="namedview1179"
+     id="namedview134"
      showgrid="false"
      inkscape:zoom="33.379557"
      inkscape:cx="6.4726649"
@@ -47,13 +47,13 @@
      inkscape:window-x="1920"
      inkscape:window-y="19"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1177" />
+     inkscape:current-layer="svg132" />
   <path
      fill="none"
      d="M0 0h24v24H0z"
-     id="path1173" />
+     id="path128" />
   <path
-     d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1.95-9H15v2h-4.95a2.5 2.5 0 0 0 4.064 1.41l1.7 1.133A4.5 4.5 0 0 1 8.028 13H7v-2h1.027a4.5 4.5 0 0 1 7.788-2.543L14.114 9.59A2.5 2.5 0 0 0 10.05 11z"
-     id="path1175"
-     style="fill:#d9d9d9;fill-opacity:1" />
+     d="M5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM12 13.5l-2.939 1.545.561-3.272-2.377-2.318 3.286-.478L12 6l1.47 2.977 3.285.478-2.377 2.318.56 3.272L12 13.5z"
+     id="path130"
+     style="fill:#d9d9d9;fill-opacity:0.97844827" />
 </svg>

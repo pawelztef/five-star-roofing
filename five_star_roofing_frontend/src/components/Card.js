@@ -9,16 +9,16 @@ const Card = (props) => {
   }
   return(
    <div className="pz-card-wrapper" >
-     <div className="pz-widget__card">
+     <div className="pz-card__item">
 
         { img &&
-        <img src={img} /> 
+        <img src={img} className="pz-card__image" /> 
         }
         { props.card.title &&
-          <h6 className="pz-widget__title">{props.card.title}</h6>
+          <h5 className="pz-card__title">{props.card.title}</h5>
         }
         { props.card.content &&
-          <p className="pz-widget__content">
+          <p className="pz-card__content">
             {props.card.content}
           </p>
         }

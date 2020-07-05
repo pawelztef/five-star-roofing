@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 24 24"
    width="24"
    height="24"
+   viewBox="0 0 24 24"
    version="1.1"
-   id="svg1177"
-   sodipodi:docname="money-euro-circle-line.svg"
+   id="svg1350"
+   sodipodi:docname="worker.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata1183">
+     id="metadata1356">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs1181" />
+     id="defs1354" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -39,21 +39,18 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1918"
      inkscape:window-height="1059"
-     id="namedview1179"
+     id="namedview1352"
      showgrid="false"
-     inkscape:zoom="33.379557"
-     inkscape:cx="6.4726649"
+     inkscape:zoom="35.375"
+     inkscape:cx="10.54417"
      inkscape:cy="12"
      inkscape:window-x="1920"
      inkscape:window-y="19"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1177" />
+     inkscape:current-layer="svg1350" />
   <path
-     fill="none"
-     d="M0 0h24v24H0z"
-     id="path1173" />
-  <path
-     d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1.95-9H15v2h-4.95a2.5 2.5 0 0 0 4.064 1.41l1.7 1.133A4.5 4.5 0 0 1 8.028 13H7v-2h1.027a4.5 4.5 0 0 1 7.788-2.543L14.114 9.59A2.5 2.5 0 0 0 10.05 11z"
-     id="path1175"
-     style="fill:#d9d9d9;fill-opacity:1" />
+     d="m 3,6 h 18 z m 7,-4 v 2 m 4,-2 v 2 m 2,8 c 2.373672,1.182645 4,3.650626 4,7 v 4 H 4 v -4 c 0,-3.354274 1.6310898,-5.824574 4,-7 m 4,4.5 V 23 m 0,-10 c 3.313709,0 6,-2.686291 6,-6 C 18,3.6862915 15.313709,1 12,1 8.6862915,1 6,3.6862915 6,7 c 0,3.313709 2.6862915,6 6,6 z M 8,12 c 0,2.209139 1.790861,4 4,4 v 0 c 2.209139,0 4,-1.790861 4,-4"
+     id="path1348"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#d9d9d9;stroke-width:2" />
 </svg>

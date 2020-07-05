@@ -8,23 +8,23 @@ class CardsWidget extends React.Component {
     const objects = [
       {
         icon: "money-euro-circle-line.svg",
-        title: "Competetive Prices",
-        content: "Sit cupiditate at quisquam ducimus culpa quis Nam sapiente suscipit"
+        title: "Best Prices",
+        content: "Here at Five Star Roofing we have a wide range of services all available for a competitive price"
       },
       {
-        icon: "money-euro-circle-line.svg",
-        title: "Competetive Prices",
-        content: "Sit cupiditate at quisquam ducimus culpa quis Nam sapiente suscipit"
+        icon: "worker.svg",
+        title: "Experienced Team",
+        content: "Our team here at Five Star Roofing have multiple years of practical experience within this industry"
       },
       {
-        icon: "money-euro-circle-line.svg",
-        title: "Competetive Prices",
-        content: "Sit cupiditate at quisquam ducimus culpa quis Nam sapiente suscipit"
+        icon: "shield-star-line.svg",
+        title: "Trustworthy Staff",
+        content: "Five Star Roofing is a member of the National Guild of Master Craftsman, our roofers can be trusted"
       },
       {
-        icon: "money-euro-circle-line.svg",
-        title: "Competetive Prices",
-        content: "Sit cupiditate at quisquam ducimus culpa quis Nam sapiente suscipit"
+        icon: "medal-line.svg",
+        title: "Quality Services",
+        content: "Each of our services are completed by a team of professional tradesmen who are all fully qualified"
       }
     ]
 
