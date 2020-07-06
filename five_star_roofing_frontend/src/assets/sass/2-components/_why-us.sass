@@ -1,0 +1,46 @@
+.pz-why-us__wrapper
+  .pz-section__wrapper
+    background: $fsr-wt
+    .pz-section__row
+      .pz-container
+        .pz-card-wrapper
+          flex: 0 0 50%
+          margin-bottom: 40px
+          @include media-desktop
+          @include media-tablet-landscape
+          @include media-tablet-portrait
+            flex: 0 0 100%
+          @include media-phone
+            flex: 0 0 100%
+          .pz-card__item
+            padding: 0 15px
+  .pz-card
+    &__item
+      margin: 0 20px
+    &__image
+      width: 100% 
+      max-width: 300px
+      height: auto
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin-top: 30px
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+      span
+        margin-bottom: 25px
+        text-align: left
+        &::before
+          content: "✓  "
+          color: $fsr-1
+          font-weight: bold
+          margin-right: 20px
+
+    &__title
+      font-size: 3rem
+      text-transform: uppercase
+      color: $fsr-4
+
