@@ -57,7 +57,6 @@ class App extends React.Component {
             </Switch>
           </div>
 
-          <EmptySpace />
           <Footer />
         </div>
       </Router>

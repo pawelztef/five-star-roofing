@@ -1,8 +1,9 @@
 import React from 'react'
 import EmptySpace from './EmptySpace'
 import Card from './Card'
+import Section from './Section'
 
-class ServicesExceprt extends React.Component {
+class ServicesExcerpt extends React.Component {
   render(){
     const objects = [
       {
@@ -25,20 +26,18 @@ class ServicesExceprt extends React.Component {
       )
     })
 
+    const title = "Services"
+
     return(
       <div className="pz-services-excerpt__wrapper">
-        <EmptySpace small />
-        <h1 className="pz-services-excerpt__title">Services</h1>
-        <EmptySpace small />
-        <div className="pz-services-excerpt__row">
-          <div className="pz-container">
-            { cards }
-          </div>
-        </div>
-        <EmptySpace small />
+        <Section 
+          small 
+          title={title}>
+          { cards }
+        </Section>
       </div>
     )
   }
 }
 
-export default ServicesExceprt
+export default ServicesExcerpt
