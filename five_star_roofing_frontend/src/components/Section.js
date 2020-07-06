@@ -3,7 +3,6 @@ import EmptySpace from './EmptySpace'
 import Card from './Card'
 
 const section = (props) => {
-  console.log(props.small)
     const bg = props.background
     return(
       <div className="pz-section__wrapper" style={{background: bg}}>
