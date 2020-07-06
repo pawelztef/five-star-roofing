@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './Banner'
 import EmptySpace from './EmptySpace'
 import Card from './Card'
+import Section from './Section'
 
 class CardsWidget extends React.Component {
   render(){
@@ -35,15 +36,9 @@ class CardsWidget extends React.Component {
     })
 
     return(
-      <div className="pz-widget__wrapper">
-        <EmptySpace small />
-        <div className="pz-widget__row">
-          <div className="pz-container">
-            { cards }
-          </div>
-        </div>
-        <EmptySpace small />
-      </div>
+      <Section small >
+        { cards }
+      </Section>
     )
   }
 }

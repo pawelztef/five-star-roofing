@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from './Banner'
 import CardsWidget from './CardsWidget'
 import Welcome from './Welcome'
+import ServicesExcerpt from './ServicesExcerpt'
+import Partners from './Partners'
 import BackgroundImage from '../assets/images/banner-bg.jpg'
 
 class HomePage extends React.Component{
@@ -20,6 +22,11 @@ class HomePage extends React.Component{
       <CardsWidget />
 
       <Welcome />
+      
+      <ServicesExcerpt />
+
+      <Partners />
+
 
       </>
     )

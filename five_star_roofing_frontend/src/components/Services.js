@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from './Banner'
 import EmptySpace from './EmptySpace'
 import Card from './Card'
+import Section from './Section'
+
 
 class Services extends React.Component {
   render(){
@@ -54,18 +56,15 @@ class Services extends React.Component {
       )
     })
 
+    const title = "That is what we do best"
+
     return(
-      <div className="pz-services__wrapper">
-        <EmptySpace small />
-        <h1 className="pz-services__title">That is what we do best</h1>
-        <EmptySpace small />
-        <div className="pz-services__row">
-          <div className="pz-container">
-            { cards }
-          </div>
-        </div>
-        <EmptySpace small />
-      </div>
+      <Section 
+        small 
+        title={title}
+        background="white">
+        { cards }
+      </Section>
     )
   }
 }
