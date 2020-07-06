@@ -1,7 +1,8 @@
 import React from 'react'
 import Banner from './Banner'
 import BackgroundImage from '../assets/images/banner-bg.jpg'
-
+import AboutUsBanner from './AboutUsBanner'
+import EmptySpace from './EmptySpace'
 class AboutPage extends React.Component{
   render(){
     return(
@@ -13,6 +14,8 @@ class AboutPage extends React.Component{
           bannerLink="/contact"
           bannerImage={BackgroundImage}
         />
+        <EmptySpace />
+        <AboutUsBanner />
       </>
     )
   }
