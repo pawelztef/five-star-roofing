@@ -35,8 +35,10 @@ class App extends React.Component {
         <div className="pz-body-wrapper">
 
           <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
+
           <MobileNav show={this.state.mobileMenuOpen}
             click={this.mobileMenuToggleHandler} />
+
           <div className="pz-page-wrapper">
             <Switch>
               <Route exact path="/">
