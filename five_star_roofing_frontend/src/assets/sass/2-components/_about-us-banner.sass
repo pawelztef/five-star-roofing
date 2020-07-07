@@ -8,14 +8,17 @@
     background-attachment: fixed
     .pz-section__row
       .pz-container
+        margin: 0 auto
         background: rgba(255,255,255,.7)
         justify-content: space-around
-        padding: 50px 50px
+        padding: 50px 0px
+        flex-wrap: nowrap
         @include media-desktop
         @include media-tablet-landscape
           width: 80%
         @include media-tablet-portrait
-          width: 60%
+          width: 80%
+          flex-direction: column
         @include media-phone
         .pz-card-wrapper
           flex: 0 0 33%
@@ -31,7 +34,7 @@
             padding: 0 15px
   .pz-card
     &__item
-      margin: 0 20px
+      margin: 0 30px
     &__image
       width: 100% 
       width: 60px 
@@ -51,7 +54,7 @@
           content: "•  "
 
     &__title
-      font-size: 1.8rem
+      font-size: 1.5rem
       text-transform: uppercase
       color: $fsr-4
 
