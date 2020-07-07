@@ -1,14 +1,13 @@
-.pz-services-excerpt__wrapper
+.pz-why-us__wrapper
   .pz-section__wrapper
-    background: lighten($fsr-0, 10%)
+    background: $fsr-wt
     .pz-section__row
       .pz-container
         .pz-card-wrapper
-          flex: 0 0 33%
+          flex: 0 0 50%
           margin-bottom: 40px
           @include media-desktop
           @include media-tablet-landscape
-            flex: 0 0 33%
           @include media-tablet-portrait
             flex: 0 0 100%
           @include media-phone
@@ -32,9 +31,13 @@
       @include media-tablet-portrait
       @include media-phone
       span
-        margin-bottom: 5px
+        margin-bottom: 25px
+        text-align: left
         &::before
-          content: "•  "
+          content: "✓  "
+          color: $fsr-1
+          font-weight: bold
+          margin-right: 20px
 
     &__title
       font-size: 3rem

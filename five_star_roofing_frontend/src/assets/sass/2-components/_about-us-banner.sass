@@ -1,8 +1,25 @@
-.pz-services-excerpt__wrapper
+.pz-about-us-banner__wrapper
   .pz-section__wrapper
-    background: lighten($fsr-0, 10%)
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../../images/about-us-banner-bg.jpg')
+    background-color: $fsr-2
+    background-size: cover
+    background-position: 0 20%
+    background-repeat: no-repeat
+    background-attachment: fixed
     .pz-section__row
       .pz-container
+        margin: 0 auto
+        background: rgba(255,255,255,.7)
+        justify-content: space-around
+        padding: 50px 0px
+        flex-wrap: nowrap
+        @include media-desktop
+        @include media-tablet-landscape
+          width: 80%
+        @include media-tablet-portrait
+          width: 80%
+          flex-direction: column
+        @include media-phone
         .pz-card-wrapper
           flex: 0 0 33%
           margin-bottom: 40px
@@ -17,10 +34,10 @@
             padding: 0 15px
   .pz-card
     &__item
-      margin: 0 20px
+      margin: 0 30px
     &__image
       width: 100% 
-      max-width: 300px
+      width: 60px 
       height: auto
     &__content
       display: flex
@@ -37,7 +54,7 @@
           content: "•  "
 
     &__title
-      font-size: 3rem
+      font-size: 1.5rem
       text-transform: uppercase
       color: $fsr-4
 

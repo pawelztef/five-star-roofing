@@ -4,6 +4,7 @@ import CardsWidget from './CardsWidget'
 import Welcome from './Welcome'
 import ServicesExcerpt from './ServicesExcerpt'
 import Partners from './Partners'
+import ContactBanner from './ContactBanner'
 import BackgroundImage from '../assets/images/banner-bg.jpg'
 
 class HomePage extends React.Component{
@@ -24,6 +25,8 @@ class HomePage extends React.Component{
       <Welcome />
       
       <ServicesExcerpt />
+
+      <ContactBanner />
 
       <Partners />
 

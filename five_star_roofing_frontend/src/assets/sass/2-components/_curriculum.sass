@@ -1,0 +1,76 @@
+.pz-curriculum
+  &__wrapper
+    .pz-container
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-around
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        width: 80%
+        flex-direction: column
+      @include media-phone
+      .pz-curriculum__column
+        &:first-of-type
+          flex: 0 0 50%
+          background: lighten($fsr-0, 10%)
+          padding: 0 50px 40px
+          @include media-desktop
+          @include media-tablet-landscape
+          @include media-tablet-portrait
+            margin-bottom: 40px
+          @include media-phone
+
+  &__title
+    text-transform: uppercase
+    color: $fsr-4
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 2.5rem
+    @include media-phone
+  &__content
+    color: $fsr-4
+    text-align: left
+    &:last-of-type
+      span
+        display: block
+        a
+          font-size: 1rem
+          color: darken($fsr-1, 10%)
+          text-decoration: underline
+          position: relative
+          bottom: 1px
+          &:hover,
+          &:focus,
+          &:active
+            color: lighten($fsr-1, 10%)
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      text-align: center
+      font-size: 1.1rem
+    @include media-phone
+.pz-curriculum__image
+  height: 100%
+  max-width: 400px
+  width: 100%
+  margin-right: 30px
+  display: block
+  object-fit: cover
+  @include media-desktop
+    margin-right: 30px
+  @include media-tablet-landscape
+    width: 100%
+  @include media-tablet-portrait
+    min-width: 100% 
+    margin-right: 0
+  @include media-phone
+
+
+    
+.pz-curriculum_column:last-of-type
+  @include media-desktop
+  @include media-tablet-landscape
+  @include media-tablet-portrait
+  @include media-phone

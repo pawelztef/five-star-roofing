@@ -1,0 +1,75 @@
+.pz-card-hr
+  &__wrapper
+    display: grid
+    grid-template-columns: 1fr 2fr
+    column-gap: 20px
+    @include media-desktop
+    @include media-tablet-landscape
+      grid-template-columns: 1fr 2fr
+    @include media-tablet-portrait
+      display: flex 
+      flex-direction: column
+    @include media-phone
+
+  &__column
+    min-height: 100%
+    &:first-of-type
+      background: url('../../images/about-us-curriculum.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: right
+      height: 100%
+      @include media-desktop
+        background-position-x: -200px
+      @include media-tablet-landscape
+        background-position-x: -300px
+      @include media-tablet-portrait
+        background-position: left 
+      @include media-phone
+
+    &:last-of-type
+      text-align: left
+      background: rgba(255,255,255,.9)
+      padding: 30px 50px 20px 50px
+      overflow: hidden 
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        padding: 30px 30px 20px 30px
+        p, a
+          font-size: 1.1rem
+      @include media-phone
+        padding: 30px 20px 20px 20px
+        p, a
+          font-size: 1.1rem
+
+  &__item
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+  &__title
+    margin-top: 0
+    text-transform: uppercase
+    color: $fsr-4
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 1.5rem
+    @include media-phone
+  &__image
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+  &__content
+    color: $fsr-4
+    a
+      font-weight: bold
+      color: $fsr-2
+      margin-right: 15px
+      font-size: 1.01rem
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
