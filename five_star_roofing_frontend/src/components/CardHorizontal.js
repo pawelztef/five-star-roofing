@@ -16,7 +16,7 @@ const cardHorizontal = () => {
           We provide our services throughout Dublin and the surrounding area.
         </p> 
         <p className="pz-card-hr__content">
-          Send us an email at <a href="mailto: fivestarrroffig@gmail.com">fivestarrroffig@gmail.com</a><br />
+          Send us an email at <a href="mailto: info@fivestarroofing.ie">info@fivestarroofing.ie</a><br />
           or call us on 24 Hour Service - <a href="tel:00353873539296">+353 (0)87 3539296</a><br /> 
           Office Line - <a href="tel:0035319120916">+353 (0)1 912 09 16</a><br />
           You can also get free quote through our webiste form.

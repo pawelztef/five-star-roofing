@@ -1,0 +1,46 @@
+.pz-contact-us
+  &__form-button
+   background: $fsr-1
+   margin: 40px 0
+   width: 100%
+   padding: 12px 0
+   font-size: 1.3rem
+   letter-spacing: 2px
+   text-transform: uppercase
+   border-radius: 4px 4px 0 0
+   border-bottom: 1px solid $fsr-4
+   font-family: $font-third
+   font-weight: 600
+   color: $fsr-wt
+
+   &:hover
+     color: $fsr-1
+     background: $fsr-0
+     border-bottom: 1px solid $fsr-1
+
+
+
+  .MuiContainer-root
+    margin: 0
+    padding: 0
+
+  .pz-container
+    justify-content: space-around
+  .pz-contact-details
+    margin-top: 40px
+    &-item
+      margin: 10px 0px
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      align-items: flex-start
+    @include media-phone
+ 
+.MuiFilledInput-underline:after
+  border-bottom: 2px solid $fsr-1 !important
+
+.MuiInputLabel-root.Mui-focused
+  color: $fsr-1 !important
+
+.MuiFilledInput-underline:before
+  border-bottom: 1px solid $fsr-4 !important
