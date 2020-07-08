@@ -10,7 +10,7 @@ const contactDetails = () => (
     </div>
     <div className="pz-contact-details-item">
       <span>
-        <MdEmail /> <a href="mailto: fivestarrroffig@gmail.com">fivestarrroffig@gmail.com</a>
+        <MdEmail /> <a href="mailto: info@fivestarroofing.ie">info@fivestarroofing.ie</a>
       </span>
     </div>
     <div className="pz-contact-details-item">

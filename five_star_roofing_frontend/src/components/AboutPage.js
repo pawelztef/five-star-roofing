@@ -12,7 +12,7 @@ class AboutPage extends React.Component{
         <Banner 
           bannerTitle="Five Star Roofing provide best quality service around Dublin"
           bannerSubtitle="ask for more details"
-          bannerCallTAction="Request a free quote"
+          bannerCallToAction="Request a free quote"
           bannerLink="/contact"
           bannerImage={BackgroundImage}
         />

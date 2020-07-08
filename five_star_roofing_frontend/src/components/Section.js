@@ -13,6 +13,9 @@ const section = (props) => {
             <EmptySpace small />
           </>
         }
+        {props.subtitle &&
+           <p className="pz-section__subtitle">{props.subtitle}</p>
+        }
         <div className="pz-section__row">
           <div className="pz-container">
             { props.children }

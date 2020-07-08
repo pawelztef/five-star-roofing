@@ -17,6 +17,10 @@ export default function MobileNav(props) {
 
   return(
     <div className={mobileNavClasses}>
+      <img className="pz-nav__brand-img" 
+        src="images/logo.png"
+        alt="Five Star Roofing Logo" />
+
       <ul className="pz-menu">
         <li className="pz-menu__item pz-menu__item-active"> 
           <Link to="/">Home</Link>

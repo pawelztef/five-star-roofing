@@ -22,7 +22,7 @@ class Curriculum extends React.Component {
             </p> 
             <p className="pz-curriculum__content">
               <span>
-                Send us an email at <a href="mailto: fivestarrroffig@gmail.com">fivestarrroffig@gmail.com</a>
+                Send us an email at <a href="mailto: info@fivestarroofing.ie">info@fivestarroofing.ie</a>
               </span>
               <span>
                 or call us on 24 Hour Service - <a href="tel:00353873539296">+353 (0)87 3539296</a>
