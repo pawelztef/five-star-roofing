@@ -6,7 +6,7 @@ const Banner = (props) => {
 
   <div className="pz-banner__wrapper"
     style={{
-      backgroundImage: `linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)), url(${props.bannerImage})`
+      backgroundImage: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${props.bannerImage})`
     }}
   >
 
@@ -17,18 +17,14 @@ const Banner = (props) => {
       </h1>
     }
     {props.bannerSubtitle &&
-      <p className="pz-banner__subtitle">
+      <p className="pz-banner__subtitle-simple">
         {props.bannerSubtitle}
       </p>
     }
-    {props.bannerLink && 
-      <NavLink 
-        exact
-        className="pz-banner__button"
-        to={props.bannerLink}>
-        {props.bannerCallToAction}
-      </NavLink>
-    }
+    <>
+      <a className="pz-banner-link" href="">01 912 09 16</a>
+      <a className="pz-banner-link" href="">087 3539296</a>
+    </>
 
   </div>
 
