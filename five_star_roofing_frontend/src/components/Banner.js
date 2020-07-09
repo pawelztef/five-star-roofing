@@ -21,10 +21,10 @@ const Banner = (props) => {
         {props.bannerSubtitle}
       </p>
     }
-    <>
-      <a className="pz-banner-link" href="">01 912 09 16</a>
-      <a className="pz-banner-link" href="">087 3539296</a>
-    </>
+    <div className="pz-banner__link-wrapper">
+      <a className="pz-banner__link" href="">01 912 09 16</a>
+      <a className="pz-banner__link" href="">087 3539296</a>
+    </div>
 
   </div>
 
