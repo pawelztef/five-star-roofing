@@ -1,6 +1,6 @@
 .pz-banner
   &__wrapper
-    margin-top: 150px
+    margin-top: 140px
     background-color: $fsr-2
     background-size: cover
     background-repeat: no-repeat
@@ -30,7 +30,7 @@
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      font-size: 2.2rem
+      font-size: 2rem
     @include media-phone
 
   &__subtitle-simple
@@ -42,6 +42,11 @@
     font-size: 2.0rem
     line-height: 2.3rem
     text-shadow: 1px 2px rgba(0,0,0,.4)
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+      font-size: 1.3rem
 
   &__subtitle
     font-size: 1.8rem
@@ -65,13 +70,14 @@
       width: 80%
     @include media-phone
       font-size: 1.3rem
+
   &__link-wrapper
     display: flex 
     justify-content: center
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      flex-direction: column
+      flex-direction: row 
       min-width: 50%
       margin-left: auto
       margin-right: auto
@@ -85,6 +91,14 @@
     &:hover
       color: $fsr-wt
       background: $fsr-4
+      text-decoration: none
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 1.1rem
+      padding: 15px 20px
+    @include media-phone
+
   &__button
     max-width: 500px
     margin: 0 auto

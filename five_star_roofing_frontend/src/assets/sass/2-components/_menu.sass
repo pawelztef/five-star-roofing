@@ -8,20 +8,25 @@
   padding: 0
   margin: 11px 0
 
+  
 
-  &__item 
+  &__item
     text-decoration: none
     text-transform: uppercase
-    font-weight: bold
+    font-weight: bold !important
     list-style: 0
-    font-size: .9rem
-    padding: .8rem 1.2rem 
-    color: $fsr-1
+    font-size: 1rem
+    padding: .8rem 1.2rem .8rem 1.2rem 
+    vertical-align: middle !important 
+    color: $fsr-1 !important
     font-weight: 600
     letter-spacing: 2px
     transition: outline .05s
     margin-right: .5rem
     margin-top: 20px
+    display: flex
+    align-self: baseline
+    padding: .9rem 1.2rem !important
     &:hover
       text-decoration: none
       background: $fsr-wt
@@ -51,12 +56,20 @@
       bottom: 1px
       margin-right: 10px
 
+.nav-link.active
+      outline: 2px solid $fsr-2
 
 .pz-menu__item-active
   background: $fsr-wt
   color: $fsr-2
   outline: 2px solid $fsr-2
+.navbar-light .navbar-toggler
+  border-color: transparent !important
+  margin-right: 35px
+  &:focus
+    outline: none
 
+.navbar-toggler-icon
 
 @include media-tablet-landscape
  .pz-menu__item
@@ -79,8 +92,6 @@
      background: $fsr-4
      a
        color: $fsr-1 !important
-    &:hover
-      background: $fsr-4
 
     a
       color: white
@@ -95,4 +106,9 @@
         padding: 0
 
 @include media-phone
-
+  .navbar-light .navbar-toggler
+    margin-right: 0px !important
+  .pz-menu__item-dark
+    display: inline-flex
+    font-size: 1rem 
+  

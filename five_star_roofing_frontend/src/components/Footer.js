@@ -25,7 +25,7 @@ const footer = () => (
         <div className="pz-footer__col-2">
           <div className="pz-footer__content">
             <div className="pz-contact-details__wrapper">
-            <h5 className="pz-footer__title">Emenrgency line</h5>
+            <h5 className="pz-footer__title">Contact Us Today</h5>
               <ContactDetails />
             </div>
           </div>
@@ -34,7 +34,7 @@ const footer = () => (
 
         <div className="pz-footer__col-4">
           <div className="pz-footer__content">
-            <h5 className="pz-footer__title">Emenrgency line</h5>
+            <h5 className="pz-footer__title">Emenrgency Call Out</h5>
             <a className="pz-menu__item pz-menu__item-dark" href="tel:00353873539296">
               <span>< MdPhoneInTalk /></span>
             <span>Emenrgency Repair</span>

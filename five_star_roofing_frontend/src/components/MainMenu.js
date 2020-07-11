@@ -8,9 +8,10 @@ import { MdPhoneInTalk } from "react-icons/md";
 export default function MainMenu() {
   return(
     <>
-      <Nav className="ml-auto">
+      <Nav className="ml-auto"  bsClass="" >
         <Nav.Link 
           exact
+          as={Link}
           className="pz-menu__item"
           activeClassName="pz-menu__item-active"
           href="/"
@@ -18,6 +19,7 @@ export default function MainMenu() {
           Home
         </Nav.Link>
         <Nav.Link 
+          as={Link}
           className="pz-menu__item"
           activeClassName="pz-menu__item-active"
           href="/services"
@@ -25,6 +27,7 @@ export default function MainMenu() {
           Services
         </Nav.Link>
         <Nav.Link 
+          as={Link}
           className="pz-menu__item"
           activeClassName="pz-menu__item-active"
           href="/gallery"
@@ -32,6 +35,7 @@ export default function MainMenu() {
           Gallery
         </Nav.Link>
         <Nav.Link 
+          as={Link}
           className="pz-menu__item"
           activeClassName="pz-menu__item-active"
           href="/about"
@@ -39,6 +43,7 @@ export default function MainMenu() {
           About
         </Nav.Link>
         <Nav.Link 
+          as={Link}
           className="pz-menu__item"
           activeClassName="pz-menu__item-active"
           href="/contact"
