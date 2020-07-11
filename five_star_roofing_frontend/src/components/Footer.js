@@ -25,19 +25,7 @@ const footer = () => (
           </div>
         </div>
 
-        <div className="pz-footer__col-3">
-          <div className="pz-footer__office-hours_wrapper">
-            <div className="pz-footer__office-hours">
-              <span><h6>Monday:</h6> 24h</span>
-              <span><h6>Tuesday:</h6> 24h</span>
-              <span><h6>Wednesday:</h6> 24h</span>
-              <span><h6>Thursday:</h6> 24h</span>
-              <span><h6>Friday:</h6> 24h</span>
-              <span><h6>Saturday:</h6> 24h</span>
-              <span><h6>Sunday:</h6> 24h</span>
-            </div>
-          </div>
-        </div>
+        
         <div className="pz-footer__col-4">
           <a className="pz-menu__item pz-menu__item-dark" href="tel:00353873539296">
             <span>< MdPhoneInTalk /></span>
