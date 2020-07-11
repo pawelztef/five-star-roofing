@@ -71,7 +71,7 @@
 
   .pz-footer__title
     color: $fsr-1
-    margin-bottom: 40px
+    margin-bottom: 20px
     text-align: left
 
 .pz-footer-meta
@@ -110,22 +110,24 @@
 @include media-tablet-landscape
 @include media-tablet-portrait
   .pz-footer
-    >*
+    padding: 0 15px
     display: flex
     flex-direction: column
     justify-content: space-between
 
     &__col-1
-      .pz-nav__brand-img
-        width: 70%  
-        margin-bottom: 50px
+      order: 3 
+      margin-bottom: 30px
+      font-size: .8rem
 
     &__col-2
+      order: 2 
       margin-bottom: 30px
+      .pz-contact-details__wrapper
+        display: block
       .pz-contact-details
-        align-items: center 
         span, a
-          font-size: 1.2rem
+          font-size: .8rem
 
     &__col-3
       margin-bottom: 30px
@@ -135,4 +137,15 @@
           text-align: center
           span, h6
             margin-bottom: 5px
-            font-size: 1.2rem
+            font-size: 1rem
+
+    &__col-4
+      order: 1 
+      margin-bottom: 60px
+      .pz-footer__content
+        .pz-footer__title
+          margin-bottom: 30px
+      .pz-menu__item
+        font-size: .8rem
+        margin-top: 10px
+        padding: 0
