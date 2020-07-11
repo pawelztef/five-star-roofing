@@ -14,13 +14,14 @@
     text-transform: uppercase
     font-weight: bold
     list-style: 0
-    font-size: 1rem
-    padding: .5rem 1.2rem 
+    font-size: .9rem
+    padding: .8rem 1.2rem 
     color: $fsr-1
     font-weight: 600
-    letter-spacing: 1px
+    letter-spacing: 2px
     transition: outline .05s
     margin-right: .5rem
+    margin-top: 20px
     &:hover
       text-decoration: none
       background: $fsr-wt
@@ -28,16 +29,27 @@
       outline: 2px solid $fsr-2
 
   &__item-dark
-    background: $fsr-1
-    color: $fsr-wt
-    trasition: all .05s
+    color: $fsr-wt !important
+    transition: all .05s
+    font-size: .9rem
+    text-transform: uppercase
+    font-weight: 600
+    &:hover
+      outline: none !important
+      span
+        background: $fsr-4
+
+    span
+      background: $fsr-1
+      outline: 1px solid $fsr-wt
+      &:first-of-type
+        padding: 1rem .6rem 1rem 1.2rem
+      &:last-of-type
+        padding: 1rem 1.2rem 1rem 1.2rem
     svg
       position: relative
       bottom: 1px
       margin-right: 10px
-    &:hover
-      background: $fsr-4
-      outline: none
 
 
 .pz-menu__item-active
