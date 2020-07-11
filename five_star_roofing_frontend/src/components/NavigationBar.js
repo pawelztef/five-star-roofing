@@ -8,11 +8,11 @@ import Brand from './Brand'
 
 export default function NavigationBar(props) {
   return(
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+    <Navbar collapseOnSelect="true" expand="lg" bg="light" variant="light" fixed="top">
       <Container fluid>
         <Brand />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" >
           <MainMenu />
         </Navbar.Collapse>
       </Container>
