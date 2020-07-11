@@ -40,10 +40,10 @@ export default function MainMenu() {
           to="/contact">
           Contact
         </NavLink>
-        <NavLink className="pz-menu__item pz-menu__item-dark" to="/contact">
+        <a className="pz-menu__item pz-menu__item-dark" href="tel:00353873539296">
           <span>< MdPhoneInTalk /></span>
           <span>Emenrgency Repair</span>
-        </NavLink>
+        </a>
       </Nav>
   </>
 
