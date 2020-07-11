@@ -4,6 +4,11 @@
   font-family: $font-second
   font-size: .9rem
   padding: 20px 0 20px 0
+  @include media-desktop
+  @include media-tablet-landscape
+  @include media-tablet-portrait
+    padding: 0px 0 20px 0
+  @include media-phone
 
 .pz-nav__top-row_content
   display: flex

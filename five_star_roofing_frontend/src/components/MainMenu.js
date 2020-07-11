@@ -1,51 +1,54 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
+import { MdPhoneInTalk } from "react-icons/md";
+
 
 export default function MainMenu() {
   return(
-    <ul className="pz-menu pz-invisible-md">
-      <li>  
-        <NavLink 
-          exact
-          className="pz-menu__item"
-          activeClassName="pz-menu__item-active"
-          to="/">
-          Home
-        </NavLink>
-      </li>
-      <li> 
-        <NavLink 
-          className="pz-menu__item"
-          activeClassName="pz-menu__item-active"
-          to="/services">
-          Services
-        </NavLink>
-      </li>
-      <li> 
-        <NavLink 
-          className="pz-menu__item"
-          activeClassName="pz-menu__item-active"
-          to="/gallery">
-          Gallery
-        </NavLink>
-      </li>
-      <li>
-        <NavLink 
-          className="pz-menu__item"
-          activeClassName="pz-menu__item-active"
-          to="/about">
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink 
-          className="pz-menu__item"
-          activeClassName="pz-menu__item-active"
-          to="/contact">
-          Contact
-        </NavLink>
-      </li>
-    </ul>
+    <Nav className="ml-auto">
+      <NavLink 
+        exact
+        className="pz-menu__item"
+        activeClassName="pz-menu__item-active"
+        to="/">
+        Home
+      </NavLink>
+      <NavLink 
+        className="pz-menu__item"
+        activeClassName="pz-menu__item-active"
+        to="/services">
+        Services
+      </NavLink>
+      <NavLink 
+        className="pz-menu__item"
+        activeClassName="pz-menu__item-active"
+        to="/gallery">
+        Gallery
+      </NavLink>
+      <NavLink 
+        className="pz-menu__item"
+        activeClassName="pz-menu__item-active"
+        to="/about">
+        About
+      </NavLink>
+      <NavLink 
+        className="pz-menu__item"
+        activeClassName="pz-menu__item-active"
+        to="/contact">
+        Contact
+      </NavLink>
+      <NavLink 
+        className="pz-menu__item pz-menu__item-dark"
+        activeClassName="pz-menu__item-active"
+        to="/contact">
+        < MdPhoneInTalk />
+        Emergency Repair
+      </NavLink>
+    </Nav>
+
+
+
   )
 }
