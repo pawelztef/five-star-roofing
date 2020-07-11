@@ -8,19 +8,20 @@
   margin-bottom: 50px
   font-size: 1rem
   padding: 0 50px
+
   &__col-1
     flex: 1 1 0px
     p
       text-align: left
       font-size: 1rem
       line-height: 2rem
+
   &__col-2
     flex: 1 1 0px
     .pz-contact-details__wrapper
-      display: flex
+      display: inline-block
       flex-direction: column
-      align-items: center
-
+      margin: 0 auto
     .pz-contact-details
       color: $fsr-1
       align-items: flex-start
@@ -39,6 +40,7 @@
         padding: 0
         margin: 0
         font-size: 1rem
+
   &__col-3
     flex: 1 1 0px
     .pz-footer__office-hours_wrapper
@@ -58,12 +60,19 @@
 
   &__col-4
     flex: 1 1 0px
+    .pz-footer__content
+      text-align: left 
     .pz-menu__item-dark
       margin-top: 20px
+      padding: 0
       background: transparent 
       &:hover
         padding: 0
-      
+
+  .pz-footer__title
+    color: $fsr-1
+    margin-bottom: 40px
+    text-align: left
 
 .pz-footer-meta
   padding: 15px
