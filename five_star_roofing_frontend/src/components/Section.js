@@ -1,6 +1,7 @@
 import React from 'react'
 import EmptySpace from './EmptySpace'
 import Card from './Card'
+import DecoLine from './DecoLine'
 
 const section = (props) => {
     const bg = props.background
@@ -10,6 +11,7 @@ const section = (props) => {
         {props.title &&
           <>
             <h1 className="pz-section__title">{props.title}</h1>
+            <DecoLine marginBottom={40} width={150} />
             <EmptySpace small />
           </>
         }

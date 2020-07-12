@@ -1,17 +1,21 @@
 .pz-welcome
   &__wrapper
   &__title
-    font-size: 3rem
     text-transform: uppercase
     color: $fsr-4
     width: 80%
-    margin: 0 auto 40px auto
+    margin: 0 auto 10px auto
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+      font-size: 2rem
   &__content
     text-align: left
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      width: 80%
+      width: 90%
       text-align: center
       margin: 0 auto
     @include media-phone

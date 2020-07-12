@@ -8,15 +8,15 @@ class ServicesExcerpt extends React.Component {
     const objects = [
       {
         icon: "new-roof.jpg",
-        content: "<span>New roof installation</span><span>Roof & attic insulation</span><span>Fascia & sofit</span><span>Tiling & slating</span>"
+        content: "<span>New roof installation</span><span>Roof & attic insulation</span><span>Fascia & sofit</span><span>Tiling & slating</span><a href='/services'>Read more...</a>"
       },
       {
         icon: "flat-roof.jpg",
-        content: "<span>Roof repairs & replacements</span><span>Home maintenance & restorations</span><span>Flat roof repair</span><span>Asbestos removal</span>"
+        content: "<span>Roof repairs & replacements</span><span>Home maintenance & restorations</span><span>Flat roof repair</span><span>Asbestos removal</span><a href='/services'>Read more...</a>"
       },
       {
         icon: "gutters.png",
-        content: "<span>Gutter instalations & repairs</span><span>PVC Dowpipes</span><span>Chimney repairs</span><span>Felt roofs</span>"
+        content: "<span>Gutter instalations & repairs</span><span>PVC Dowpipes</span><span>Chimney repairs</span><span>Felt roofs</span><a href='/services'>Read more...</a>"
       }
     ]
 
@@ -31,7 +31,6 @@ class ServicesExcerpt extends React.Component {
     return(
       <div className="pz-services-excerpt__wrapper">
         <Section 
-          small 
           title={title}>
           { cards }
         </Section>
