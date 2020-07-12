@@ -1,5 +1,12 @@
 .pz-services-excerpt__wrapper
   .pz-section__wrapper
+    .pz-section__title
+      font-size: 2.5rem
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+        font-size: 2rem
     background: lighten($fsr-0, 10%)
     .pz-section__row
       .pz-container
@@ -14,10 +21,10 @@
           @include media-phone
             flex: 0 0 100%
           .pz-card__item
-            padding: 0 15px
+            padding: 0 
   .pz-card
     &__item
-      margin: 0 20px
+      margin: 0 
     &__image
       width: 100% 
       max-width: 300px
@@ -54,4 +61,8 @@
       font-size: 3rem
       text-transform: uppercase
       color: $fsr-4
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
 
