@@ -51,7 +51,14 @@
                   content: "•  "
 
     &__title
-      font-size: 3rem
+      font-size: 2.5rem
       text-transform: uppercase
       color: $fsr-4
+      & + div
+        background: $fsr-4
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+        font-size: 2rem
 
