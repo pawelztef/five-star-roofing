@@ -5,25 +5,26 @@ import ContactForm from './ContactForm'
 import EmptySpace from './EmptySpace'
 import Section from './Section'
 import ContactDetails from './ContactDetails'
+import GoogleMap from './GoogleMap'
 class ContactPage extends React.Component{
   render(){
     return(
       <div className="pz-contact-us" >
 
-          <Banner 
-            bannerTitle="Contact Us"
-            bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
-            bannerImage={BackgroundImage}
-            displayButton
-          />
+        <Banner 
+          bannerTitle="Contact Us"
+          bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
+          bannerImage={BackgroundImage}
+          displayButton
+        />
 
 
-        <Section background="white">
-          <ContactDetails />
-          <ContactForm />
-        </Section>
-
-      </div>
+      <Section background="white">
+        <ContactDetails />
+        <ContactForm />
+      </Section>
+      <GoogleMap />
+    </div>
     )
   }
 }
