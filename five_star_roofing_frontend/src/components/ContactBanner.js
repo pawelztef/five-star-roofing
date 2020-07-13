@@ -7,7 +7,7 @@ class ContactBanner extends React.Component {
     const objects = [
       {
         title: "contact info",
-        content: "If you would like to learn more about the full variety of roofing products and services available from the crew at Global Roofing, please do not hesitate to get in contact with one of our members of staff, who will be more than happy to assist you with any queries you may have regarding our products.<br /> <h2>Call Us Today <a href='tel:00353873539296'>+353 (0)87 3539296</a></h2>"
+        content: "If you would like to learn more about the full variety of roofing products and services available from the crew at <strong>Five Star Roofing</strong>, please do not hesitate to get in contact with one of our members of staff, who will be more than happy to assist you with any queries you may have regarding our products.<br /> <h2>Call Us Today <a href='tel:00353873539296'>+353 (0)87 3539296</a></h2>"
       }
     ]
 

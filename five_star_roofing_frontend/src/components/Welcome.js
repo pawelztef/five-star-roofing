@@ -1,17 +1,18 @@
 import React from 'react'
 import EmptySpace from './EmptySpace'
+import DecoLine from './DecoLine'
 
 const Welcome = () => {
   return(
    <div className="pz-welcome__wrapper" >
-        <EmptySpace small />
-        <EmptySpace small />
+        <EmptySpace />
         <div className="pz-welcome__row">
           <div className="pz-container">
             <h1 className="pz-welcome__title">Welcome to Five Star Roofing</h1>
+            <DecoLine marginBottom={40} />
             <p className="pz-welcome__content">
-              Five Star Roofing provides a superior range of roofing services throughout Dublin 
-              and the surrounding regions. As specialists in many areas in our industry, we 
+              Five Star Roofing provides a superior range of roofing services 
+              throughout Ireland. As specialists in many areas in our industry, we 
               consistently strive to deliver high quality roofs at competitive rates for 
               both domestic and commercial customers. At Five Star Roofing, we have a wealth 
               of experience in the roofing industry.<br /><br /> Over time we have gathered vital 
@@ -27,7 +28,7 @@ const Welcome = () => {
             </p>
           </div>
         </div>
-        <EmptySpace small />
+        <EmptySpace />
      
    </div>
   )

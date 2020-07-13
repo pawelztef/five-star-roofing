@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from './Banner'
-import BackgroundImage from '../assets/images/banner-bg.jpg'
+import BackgroundImage from '../assets/images/new-bg.jpeg'
 import ContactForm from './ContactForm'
 import EmptySpace from './EmptySpace'
 import Section from './Section'
@@ -10,19 +10,22 @@ class ContactPage extends React.Component{
     return(
       <div className="pz-contact-us" >
 
-      <Banner 
-        bannerImage={BackgroundImage}
-      />
+          <Banner 
+            bannerTitle="Contact Us"
+            bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
+            bannerImage={BackgroundImage}
+            displayButton
+          />
 
 
-    <Section background="white">
-      <ContactDetails />
-      <ContactForm />
-    </Section>
+        <Section background="white">
+          <ContactDetails />
+          <ContactForm />
+        </Section>
 
-    </div>
-  )
-}
+      </div>
+    )
+  }
 }
 
 export default ContactPage

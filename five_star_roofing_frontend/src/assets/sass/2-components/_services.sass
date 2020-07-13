@@ -1,0 +1,94 @@
+.pz-services__page-banner-wrapper
+  position: relative
+  .pz-banner__wrapper
+    .pz-banner__title
+      padding-top: 0
+      margin-top: 0
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        top:  -50px
+        position: relative
+      @include media-phone
+    .pz-banner__subtitle-simple
+      @include media-tablet-portrait
+        top:  -50px
+        position: relative
+  .pz-cta__wrapper 
+    position: absolute
+    width: 100%
+    bottom: 0px
+    display: flex
+    justify-content: center
+    background: $fsr-1
+    .pz-cta__link
+      text-decoration: none
+      text-transform: uppercase
+      color: $fsr-wt 
+      background: $fsr-4
+      border: 3px solid $fsr-wt
+      padding: 13px 29px
+      line-height: 17px
+      font-size: 14px
+      transition: all .4s
+      position: absolute
+      margin-top: 10px
+      &:hover
+       border-color: $fsr-4
+       background: $fsr-wt
+       color: $fsr-4
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        bottom: -25px
+      @include media-phone
+
+    .pz-section__wrapper
+      flex: 1
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        div:nth-of-type(5)
+          display: none
+      @include media-phone
+
+      .pz-decoline
+        display: none
+      .pz-section__title
+        text-transform: Capitalize
+        color: $fsr-wt
+        width: 90%
+        margin: 25px auto 0 auto
+        @include media-desktop
+        @include media-tablet-landscape
+          font-size: 2rem
+        @include media-tablet-portrait
+          margin-top: 0
+        @include media-phone
+      .pz-section__row
+        .pz-container
+          justify-content: center
+
+.pz-services__page
+  .pz-section__wrapper
+    .pz-section__row
+      .pz-container
+        .pz-card-wrapper
+          .pz-card__item
+            .pz-card__title, .pz-card__content
+              color: $fsr-4
+
+  .pz-section__title
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 2rem
+    @include media-phone
+
+
+.pz-decoline
+  @include media-desktop
+  @include media-tablet-landscape
+  @include media-tablet-portrait
+  @include media-phone
+    margin-bottom: 0 !important

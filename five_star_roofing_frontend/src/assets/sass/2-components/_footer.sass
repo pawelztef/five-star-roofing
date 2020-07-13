@@ -1,43 +1,51 @@
 .pz-footer__wrapper
-  background: lighten($fsr-0, 11%)
-  color: $fsr-4
+  background: $fsr-4
+  color: $fsr-3
 .pz-footer
   display: flex
-  justify-content: space-between
+  justify-content: space-around
   margin-top: 80px
   margin-bottom: 50px
-  font-size: 1.5em
+  font-size: 1rem
+  padding: 0 50px
+
   &__col-1
-    flex: 1 1 0
+    flex: 1 1 0px
+    p
+      text-align: left
+      font-size: 1rem
+      line-height: 2rem
+
   &__col-2
-    flex: 2 1 0 
-
+    flex: 1 1 0px
     .pz-contact-details__wrapper
-      display: flex
+      display: inline-block
       flex-direction: column
-      align-items: center
-
+      margin: 0 auto
     .pz-contact-details
-      color: darken($fsr-1, 10%)
+      color: $fsr-1
       align-items: flex-start
-
       &-item
         margin-bottom: 10px
         &:last-of-type
-          display: none
-
         a, span
           letter-spacing: .8px
+          font-size: 1rem
 
+        a
+          color: $fsr-3
+        svg
+          top: -3px
       h6
         padding: 0
         margin: 0
+        font-size: 1rem
 
   &__col-3
-    flex: 1 1 0
+    flex: 1 1 0px
     .pz-footer__office-hours_wrapper
       display: flex
-      justify-content: flex-end
+      justify-content: center 
     .pz-footer__office-hours
       text-align: left
       span
@@ -50,10 +58,26 @@
           margin: 0
           color: $fsr-1
 
+  &__col-4
+    flex: 1 1 0px
+    .pz-footer__content
+      text-align: left 
+    .pz-menu__item-dark
+      margin-top: 20px
+      padding: 0
+      background: transparent 
+      &:hover
+        padding: 0
+
+  .pz-footer__title
+    color: $fsr-1
+    margin-bottom: 20px
+    text-align: left
+
 .pz-footer-meta
   padding: 15px
-  color: $fsr-wt
-  background: $fsr-1
+  color: $fsr-4
+  background: darken($fsr-4, 10%)
   text-transform: uppercase
   font-family: $font-first
   a
@@ -61,6 +85,7 @@
     font-family: $font-first
     font-weight: bold
     margin-left: 5px
+    transition: all 0.04s
     &:hover
       color: white
 
@@ -83,24 +108,25 @@
             font-size: .9rem
 
 @include media-tablet-landscape
-@include media-tablet-portrait
   .pz-footer
-    >*
+    padding: 0 15px
     display: flex
     flex-direction: column
     justify-content: space-between
 
     &__col-1
-      .pz-nav__brand-img
-        width: 70%  
-        margin-bottom: 50px
+      order: 3 
+      margin-bottom: 30px
+      font-size: .8rem
 
     &__col-2
+      order: 2 
       margin-bottom: 30px
+      .pz-contact-details__wrapper
+        display: block
       .pz-contact-details
-        align-items: center 
         span, a
-          font-size: 1.2rem
+          font-size: .8rem
 
     &__col-3
       margin-bottom: 30px
@@ -110,4 +136,18 @@
           text-align: center
           span, h6
             margin-bottom: 5px
-            font-size: 1.2rem
+            font-size: 1rem
+
+    &__col-4
+      order: 1 
+      margin-bottom: 60px
+      .pz-footer__content
+        .pz-footer__title
+          margin-bottom: 30px
+      .pz-menu__item
+        font-size: .8rem
+        margin-top: 10px
+        padding: 0 !important
+
+.pz-footer__col-4 .pz-menu__item-dark
+  padding: 0 !important

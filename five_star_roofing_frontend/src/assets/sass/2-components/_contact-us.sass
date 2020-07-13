@@ -1,4 +1,13 @@
 .pz-contact-us
+  .pz-section__wrapper
+    .pz-section__row
+      .pz-container
+        width: 100%
+
+  .pz-banner__wrapper
+    .pz-container
+      justify-content: center
+
   &__form-button
    background: $fsr-1
    margin: 40px 0
@@ -26,10 +35,26 @@
 
   .pz-container
     justify-content: space-around
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      width: 90%
+    @include media-phone
+
   .pz-contact-details
     margin-top: 40px
     &-item
       margin: 10px 0px
+      svg
+        position: relative
+        top: -1px
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        font-size: 1rem
+        a
+          font-size: 1rem
+      @include media-phone
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait

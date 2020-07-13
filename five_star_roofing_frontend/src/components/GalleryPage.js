@@ -1,4 +1,8 @@
 import React from 'react'
+import Banner from './Banner'
+import ContactBanner from './ContactBanner'
+import BackgroundImage from '../assets/images/new-bg.jpeg'
+import CTABanner from './CTABanner'
 import EmptySpace from './EmptySpace'
 import Gallery from 'react-grid-gallery'
 import gutter1 from '../assets/images/gallery/gutter1.png'
@@ -94,6 +98,13 @@ const IMAGES =
 const galleryPage = () => {
   return(
     <div className="pz-gallery__wrapper">
+      <div className="pz-services__page-banner-wrapper">
+        <Banner 
+          bannerTitle="Gallery"
+          bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
+          bannerImage={BackgroundImage} />
+        <CTABanner />
+      </div>
       <EmptySpace />
       <div className="pz-container">
 	<Gallery 

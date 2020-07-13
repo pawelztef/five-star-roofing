@@ -1,39 +1,53 @@
 .pz-banner
   &__wrapper
+    margin-top: 140px
     background-color: $fsr-2
     background-size: cover
-    background-position: 0 20%
     background-repeat: no-repeat
-    background-attachment: fixed
+    background-position: top center
 
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      background-position: 0 50px
     @include media-phone
-      background-position: 0 60px
 
   &__container
-    height: 550px
+    height: 600px
     position: relative
     display: flex
     justify-content: center
     flex-direction: column
     padding-bottom: 40px
   &__title
-    margin: 40px auto 40px auto
+    margin: 40px auto 20px auto
     padding: 0
     width: 80%
     color: $fsr-wt
     font-family: $font-third
     font-size: 3.0rem
     text-shadow: 1px 2px rgba(0,0,0,.4)
+    text-transform: uppercase
 
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      font-size: 2.2rem
+      font-size: 2rem
     @include media-phone
+
+  &__subtitle-simple
+    margin: 4px auto 40px auto
+    padding: 0
+    width: 80%
+    color: $fsr-wt
+    font-family: $font-third
+    font-size: 2.0rem
+    line-height: 2.3rem
+    text-shadow: 1px 2px rgba(0,0,0,.4)
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+      font-size: 1.3rem
 
   &__subtitle
     font-size: 1.8rem
@@ -57,6 +71,34 @@
       width: 80%
     @include media-phone
       font-size: 1.3rem
+
+  &__link-wrapper
+    display: flex 
+    justify-content: center
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      flex-direction: row 
+      min-width: 50%
+      margin-left: auto
+      margin-right: auto
+    @include media-phone
+  &__link
+    font-size: 1.3rem
+    background: $fsr-1
+    padding: 15px 50px
+    margin: 0 10px 20px 10px
+    color: $fsr-wt
+    &:hover
+      color: $fsr-wt
+      background: $fsr-4
+      text-decoration: none
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 1.1rem
+      padding: 15px 20px
+    @include media-phone
 
   &__button
     max-width: 500px

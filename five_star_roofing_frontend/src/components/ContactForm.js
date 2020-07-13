@@ -49,7 +49,6 @@ export default function ContactForm() {
                 fullWidth
                 id="fullName"
                 label="Full Name"
-                autoFocus
               />
             </Grid>
             <Grid item xs={12}>

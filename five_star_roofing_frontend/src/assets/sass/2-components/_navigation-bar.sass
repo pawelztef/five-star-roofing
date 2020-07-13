@@ -8,6 +8,20 @@
 
 .pz-nav__burger-button
 
-.pz-nav
-  z-index: 11
+.pz-nav__wrapper
+
+nav.navbar
+  padding: 1.2rem .5rem
+  .navbar-nav
+    padding: 20px 40px 40px 40px
+    flex-wrap:  wrap-reverse
+    justify-content: flex-end
+@include media-desktop
+@include media-tablet-landscape
+  .navbar-nav
+    padding: 15px !important
+    display: block !important
+@include media-tablet-portrait
+@include media-phone
+
 
