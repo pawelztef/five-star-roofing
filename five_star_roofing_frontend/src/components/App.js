@@ -18,7 +18,6 @@ class App extends React.Component {
   state = {
     mobileMenuOpen: false
   }
-
   mobileMenuToggleHandler = () => {
     this.setState((prevState) => {
       console.log('App.mobileMenuToggleHandler prevState', prevState)
