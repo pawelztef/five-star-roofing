@@ -10,7 +10,7 @@ import CTABanner from './CTABanner'
 class ServicesPage extends React.Component{
   render(){
     return(
-      <>
+      <div className="pz-services__page">
 
 
       <div className="pz-services__page-banner-wrapper">
@@ -19,7 +19,7 @@ class ServicesPage extends React.Component{
           bannerImage={BackgroundImage} />
         <CTABanner />
       </div>
-
+      <EmptySpace />
 
       <Services />
 
@@ -27,7 +27,7 @@ class ServicesPage extends React.Component{
 
       <WhyUs />
 
-    </>
+    </div>
     )
   }
 }

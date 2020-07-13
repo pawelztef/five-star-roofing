@@ -4,6 +4,12 @@
     .pz-banner__title
       padding-top: 0
       margin-top: 0
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        top:  -50px
+        position: relative
+      @include media-phone
   .pz-cta__wrapper 
     position: absolute
     width: 100%
@@ -27,16 +33,52 @@
        border-color: $fsr-4
        background: $fsr-wt
        color: $fsr-4
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        bottom: -25px
+      @include media-phone
+
     .pz-section__wrapper
       flex: 1
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+        div:nth-of-type(5)
+          display: none
+      @include media-phone
+
       .pz-decoline
         display: none
       .pz-section__title
         text-transform: Capitalize
         color: $fsr-wt
-        margin-top: 25px
-        margin-bottom: 0
+        width: 90%
+        margin: 25px auto 0 auto
+        @include media-desktop
+        @include media-tablet-landscape
+          font-size: 2rem
+        @include media-tablet-portrait
+          margin-top: 0
+        @include media-phone
       .pz-section__row
         .pz-container
           justify-content: center
-          
+
+.pz-services__page
+  .pz-section__wrapper
+    .pz-section__row
+      .pz-container
+        .pz-card-wrapper
+          .pz-card__item
+            .pz-card__title, .pz-card__content
+              color: $fsr-4
+
+  .pz-section__title
+    @include media-desktop
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+      font-size: 2rem
+    @include media-phone
+  .pz-decoline
+    margin-bottom: 0
