@@ -12,7 +12,8 @@ class AboutPage extends React.Component{
       <>
         <div className="pz-services__page-banner-wrapper">
           <Banner 
-            bannerTitle="Gallery"
+            bannerTitle="About Us"
+            bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
             bannerImage={BackgroundImage} />
           <CTABanner />
         </div>

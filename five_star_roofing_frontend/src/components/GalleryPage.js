@@ -101,6 +101,7 @@ const galleryPage = () => {
       <div className="pz-services__page-banner-wrapper">
         <Banner 
           bannerTitle="Gallery"
+          bannerSubtitle="Five Star Roofing Reliable and Reputed Roofing Contractor in Ireland"
           bannerImage={BackgroundImage} />
         <CTABanner />
       </div>
