@@ -2,6 +2,7 @@ import React from 'react'
 import EmptySpace from './EmptySpace'
 import Card from './Card'
 import Section from './Section'
+import DecoLine from './DecoLine'
 
 class Curriculum extends React.Component {
   render(){
@@ -12,13 +13,14 @@ class Curriculum extends React.Component {
         <div className="pz-container">
           <div className="pz-curriculum__column">
             <h4 className="pz-curriculum__title">Five Star Roofing</h4>
+            <DecoLine />
             <p className="pz-curriculum__content">
               Five Star Roofing prides on being a leader in this industry. We have been around 
               for more than 20 years, are a local family owned business, and offer a wide 
               range of services. We rely on dedicated specialists who possess lots of hands-on
               experience to tackle any job. You should talk to us for any roofing job 
               whether new installation, flat roof, pitched roof, or any work on the chimney, fascia, soffit, or gutter.
-              We provide our services throughout Dublin and the surrounding area.
+              We provide our services throughout Ireland.
             </p> 
             <p className="pz-curriculum__content">
               <span>
@@ -31,7 +33,7 @@ class Curriculum extends React.Component {
                 Office Line - <a href="tel:0035319120916">+353 (0)1 912 09 16</a>
               </span>
               <span>
-                You can also get free quote through our webiste <a href="/conact">form</a>.
+                You can also get free quote through our webiste <a href="/conact">form.</a>
               </span>
             </p>
           </div>

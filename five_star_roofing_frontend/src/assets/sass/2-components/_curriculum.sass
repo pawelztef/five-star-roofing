@@ -7,27 +7,29 @@
       @include media-desktop
       @include media-tablet-landscape
       @include media-tablet-portrait
-        width: 80%
+        width: 90%
         flex-direction: column
       @include media-phone
       .pz-curriculum__column
         &:first-of-type
           flex: 0 0 50%
           background: lighten($fsr-0, 10%)
-          padding: 0 50px 40px
+          padding: 40px 50px 40px
           @include media-desktop
           @include media-tablet-landscape
           @include media-tablet-portrait
             margin-bottom: 40px
+            padding: 40px 20px 40px
           @include media-phone
 
   &__title
+    margin-bottom: 5px
     text-transform: uppercase
-    color: $fsr-4
+    color: $fsr-1
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      font-size: 2.5rem
+      font-size: 2rem
     @include media-phone
   &__content
     color: $fsr-4
@@ -45,6 +47,12 @@
           &:focus,
           &:active
             color: lighten($fsr-1, 10%)
+          @include media-desktop
+          @include media-tablet-landscape
+          @include media-tablet-portrait
+            display: block
+            
+    @include media-phone
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
