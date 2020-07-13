@@ -2,30 +2,32 @@ import React from 'react'
 import Banner from './Banner'
 import Services from './Services'
 import EmptySpace from './EmptySpace'
-import BackgroundImage from '../assets/images/banner-bg.jpg'
+import BackgroundImage from '../assets/images/new-bg.jpeg'
 import ContactBanner from './ContactBanner'
 import WhyUs from './WhyUs'
+import CTABanner from './CTABanner'
 
 class ServicesPage extends React.Component{
   render(){
     return(
       <>
 
+
+      <div className="pz-services__page-banner-wrapper">
         <Banner 
-          bannerTitle="Five Star Roofing provide best quality service around Dublin"
-          bannerSubtitle="ask for more details"
-          bannerCallToAction="Request a free quote"
-          bannerLink="/contact"
-          bannerImage={BackgroundImage}
-        />
+          bannerTitle="Services"
+          bannerImage={BackgroundImage} />
+        <CTABanner />
+      </div>
 
-        <Services />
 
-        <ContactBanner />
+      <Services />
 
-        <WhyUs />
+      <ContactBanner />
 
-      </>
+      <WhyUs />
+
+    </>
     )
   }
 }

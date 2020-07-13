@@ -16,6 +16,7 @@ class HomePage extends React.Component{
         bannerTitle="NEW ROOFS & TILING"
         bannerSubtitle="Reliable and Reputed Roofing Contractor in Ireland"
         bannerImage={BackgroundImage}
+        displayButton
       />
 
       <CardsWidget />
