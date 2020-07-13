@@ -80,5 +80,11 @@
     @include media-tablet-portrait
       font-size: 2rem
     @include media-phone
-  .pz-decoline
-    margin-bottom: 0
+
+
+.pz-decoline
+  @include media-desktop
+  @include media-tablet-landscape
+  @include media-tablet-portrait
+  @include media-phone
+    margin-bottom: 0 !important
