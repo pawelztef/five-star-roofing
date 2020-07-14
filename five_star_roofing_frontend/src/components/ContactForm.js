@@ -35,7 +35,7 @@ export default function ContactForm() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="sm">
+    <Container component="main" >
       <CssBaseline />
       <div className={classes.paper}>
         <form className={classes.form} noValidate>

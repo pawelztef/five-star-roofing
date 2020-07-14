@@ -2,7 +2,7 @@
   .pz-section__wrapper
     .pz-section__row
       .pz-container
-        width: 100%
+        width: 80%
 
   .pz-banner__wrapper
     .pz-container
@@ -32,19 +32,51 @@
   .MuiContainer-root
     margin: 0
     padding: 0
+    flex: 0 0 60%
+    @include media-desktop
+      flex: 0 0 50%
+    @include media-tablet-landscape
+      flex: 0 0 40%
+    @include media-tablet-portrait
+      flex: 0 0 100%
+      order: -1
+    @include media-phone
+
+  .makeStyles-form-3
+    margin-top: 0
 
   .pz-container
-    justify-content: space-around
+    justify-content: space-between
+    align-items: top
+    flex-wrap: nowrap
     @include media-desktop
     @include media-tablet-landscape
+      justify-content: center
     @include media-tablet-portrait
+      flex-direction: column
+      justify-content: flex-start
       width: 90%
     @include media-phone
 
   .pz-contact-details
-    margin-top: 40px
+    flex: 0 0 40%
+    @include media-desktop
+      flex: 0 0 50%
+    @include media-tablet-landscape
+      flex: 0 0 60%
+    @include media-tablet-portrait
+      flex: 0 0 100%
+      align-items: flex-start
+    @include media-phone
+
     &-item
       margin: 10px 0px
+      span
+        @include media-desktop
+        @include media-tablet-landscape
+        @include media-tablet-portrait
+        @include media-phone
+
       svg
         position: relative
         top: -1px
@@ -52,14 +84,10 @@
       @include media-tablet-landscape
       @include media-tablet-portrait
         font-size: 1rem
-        a
-          font-size: 1rem
-      @include media-phone
-    @include media-desktop
-    @include media-tablet-landscape
-    @include media-tablet-portrait
-      align-items: flex-start
-    @include media-phone
+
+      a
+        font-size: 1rem
+
  
 .MuiFilledInput-underline:after
   border-bottom: 2px solid $fsr-1 !important

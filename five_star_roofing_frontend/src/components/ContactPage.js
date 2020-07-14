@@ -23,6 +23,7 @@ class ContactPage extends React.Component{
         <ContactDetails />
         <ContactForm />
       </Section>
+
       <GoogleMap />
     </div>
     )
