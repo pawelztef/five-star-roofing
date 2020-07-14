@@ -8,6 +8,8 @@ import ContactDetails from './ContactDetails'
 import GoogleMap from './GoogleMap'
 class ContactPage extends React.Component{
   render(){
+    const title = "Get a quote from Five Star Roofing"
+
     return(
       <div className="pz-contact-us" >
 
@@ -19,7 +21,9 @@ class ContactPage extends React.Component{
         />
 
 
-      <Section background="white">
+      <Section 
+        title={title}
+        background="white">
         <ContactDetails />
         <ContactForm />
       </Section>

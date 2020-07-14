@@ -6,6 +6,8 @@ import CTABanner from './CTABanner'
 import EmptySpace from './EmptySpace'
 import Gallery from 'react-grid-gallery'
 import GetQuote from './GetQuote'
+import Section from './Section'
+import DecoLine from './DecoLine'
 
 
 import gutter1 from '../assets/images/gallery/gutter1.png'
@@ -109,13 +111,15 @@ const galleryPage = () => {
         <CTABanner />
       </div>
       <EmptySpace />
+      <h1 className="pz-section__title">Our recent projects</h1>
+      <DecoLine marginBottom={40} width={150} className="pz-decoline" />
+      <EmptySpace small />
       <div className="pz-container">
-	<Gallery 
-	  enableImageSelection={false}
-	  images={IMAGES}/>
+        <Gallery 
+          enableImageSelection={false}
+          images={IMAGES}/>
       </div>
       <EmptySpace />
-      <GetQuote />
     </div>
   )
 }
