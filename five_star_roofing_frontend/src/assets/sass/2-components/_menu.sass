@@ -15,7 +15,7 @@
     text-transform: uppercase
     font-weight: bold !important
     list-style: 0
-    font-size: 1rem
+    font-size: .9rem
     padding: .8rem 1.2rem .8rem 1.2rem 
     vertical-align: middle !important 
     color: $fsr-1 !important
@@ -36,7 +36,7 @@
   &__item-dark
     color: $fsr-wt !important
     transition: all .05s
-    font-size: .9rem
+    font-size: .8rem
     text-transform: uppercase
     font-weight: 600
     &:hover
@@ -72,9 +72,10 @@
 .navbar-toggler-icon
 
 @include media-tablet-landscape
- .pz-menu__item
-   font-size: 1.2rem
-   padding: .7rem 1.2rem .6rem 1.2rem
+  .pz-menu__item
+    a
+      font-size: 1.2rem
+      padding: .7rem 1.2rem .6rem 1.2rem
 
 @include media-tablet-portrait
   .pz-menu

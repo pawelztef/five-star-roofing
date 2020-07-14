@@ -5,6 +5,9 @@ import BackgroundImage from '../assets/images/new-bg.jpeg'
 import CTABanner from './CTABanner'
 import EmptySpace from './EmptySpace'
 import Gallery from 'react-grid-gallery'
+import GetQuote from './GetQuote'
+
+
 import gutter1 from '../assets/images/gallery/gutter1.png'
 import gutter2 from '../assets/images/gallery/gutter2.png'
 import gutter3a from '../assets/images/gallery/gutter3.jpg'
@@ -112,6 +115,7 @@ const galleryPage = () => {
 	  images={IMAGES}/>
       </div>
       <EmptySpace />
+      <GetQuote />
     </div>
   )
 }
