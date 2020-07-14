@@ -8,7 +8,7 @@ class GetQuote extends React.Component {
 
     return(
       <div className="pz-quote__wrapper">
-        <Section> 
+        <Section background="white"> 
           <ContactForm />
         </Section>
       </div>

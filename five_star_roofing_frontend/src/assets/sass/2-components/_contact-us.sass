@@ -1,8 +1,21 @@
 .pz-contact-us
   .pz-section__wrapper
+    .pz-section__title
+      font-size: 2.5rem
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+        font-size: 2rem
+
     .pz-section__row
       .pz-container
         width: 80%
+        @include media-desktop
+        @include media-tablet-landscape
+        @include media-tablet-portrait
+        @include media-phone
+          width: 90%
 
   .pz-banner__wrapper
     .pz-container
@@ -28,25 +41,8 @@
      border-bottom: 1px solid $fsr-1
 
 
-
-  .MuiContainer-root
-    margin: 0
-    padding: 0
-    flex: 0 0 60%
-    @include media-desktop
-      flex: 0 0 50%
-    @include media-tablet-landscape
-      flex: 0 0 40%
-    @include media-tablet-portrait
-      flex: 0 0 100%
-      order: -1
-    @include media-phone
-
-  .makeStyles-form-3
-    margin-top: 0
-
   .pz-container
-    justify-content: space-between
+    justify-content: center
     align-items: top
     flex-wrap: nowrap
     @include media-desktop
@@ -58,12 +54,32 @@
       width: 90%
     @include media-phone
 
-  .pz-contact-details
-    flex: 0 0 40%
+
+  .MuiContainer-root
+    margin: 0
+    padding: 0
+    flex: 0 0 50%
+    margin-left: 20px
     @include media-desktop
       flex: 0 0 50%
+      margin-left: 10px
     @include media-tablet-landscape
-      flex: 0 0 60%
+      flex: 0 0 50%
+    @include media-tablet-portrait
+      flex: 0 0 100%
+      margin-left: 0px
+      order: -1
+    @include media-phone
+
+
+  .pz-contact-details
+    flex: 0 0 30%
+    margin-right: 20px
+    @include media-desktop
+      flex: 0 0 50%
+      margin-right: 10px
+    @include media-tablet-landscape
+      flex: 0 0 50%
     @include media-tablet-portrait
       flex: 0 0 100%
       align-items: flex-start
@@ -71,11 +87,20 @@
 
     &-item
       margin: 10px 0px
+      @include media-desktop
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+        text-align: left
+      @include media-phone-s
       span
         @include media-desktop
         @include media-tablet-landscape
         @include media-tablet-portrait
         @include media-phone
+          font-size: .9rem
+        @include media-phone-s
+          font-size: 0.8rem
 
       svg
         position: relative
@@ -87,7 +112,17 @@
 
       a
         font-size: 1rem
+        @include media-desktop
+        @include media-tablet-landscape
+        @include media-tablet-portrait
+        @include media-phone
+          font-size: .9rem
+        @include media-phone-s
+          font-size: .8rem
 
+
+  .makeStyles-form-3
+    margin-top: 0
  
 .MuiFilledInput-underline:after
   border-bottom: 2px solid $fsr-1 !important

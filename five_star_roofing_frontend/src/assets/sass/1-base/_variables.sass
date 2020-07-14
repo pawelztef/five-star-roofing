@@ -15,10 +15,15 @@ $fsr-3-rgba: rgba(115,181,222, 1)
 $fsr-4-rgba: rgba(29,46,56, 1)
 
 
+$media-phone-s: 321px
 $media-phone: 576px
 $media-tablet-portrait: 768px
 $media-tablet-landscape: 992px
 $media-tablet-desktop: 1200px
+
+@mixin media-phone-s
+  @media (max-width: $media-phone-s)
+    @content 
 
 @mixin media-phone
   @media (max-width: $media-phone)
