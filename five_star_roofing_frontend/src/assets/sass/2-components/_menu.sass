@@ -8,8 +8,6 @@
   padding: 0
   margin: 11px 0
 
-  
-
   &__item
     text-decoration: none
     text-transform: uppercase
@@ -113,3 +111,42 @@
     display: inline-flex
     font-size: 1rem 
   
+#responsive-navbar-nav
+
+  .navbar-nav
+    @include media-desktop
+    @include media-desktop-s
+      flex-wrap: nowrap
+      margin: 0
+      padding: 0
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+    @include media-phone-s
+
+    .nav-link
+      @include media-desktop
+      @include media-desktop-s
+        font-size: .8rem
+        padding: .8rem .3rem .8rem .3rem !important
+        margin: 0
+        margin-left: 5px
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+      @include media-phone-s
+
+    .pz-menu__item-dark
+      @include media-desktop
+      @include media-desktop-s
+        margin: 0
+        font-size: .8rem
+        span:first-of-type
+          padding: .86rem .3rem .86rem 1.2rem
+        span:last-of-type
+          padding: .86rem 1.2rem .86rem .6rem
+      @include media-tablet-landscape
+      @include media-tablet-portrait
+      @include media-phone
+      @include media-phone-s
+

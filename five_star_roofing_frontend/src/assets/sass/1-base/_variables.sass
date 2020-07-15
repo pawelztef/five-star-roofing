@@ -19,7 +19,8 @@ $media-phone-s: 321px
 $media-phone: 576px
 $media-tablet-portrait: 768px
 $media-tablet-landscape: 992px
-$media-tablet-desktop: 1200px
+$media-tablet-desktop-s: 1024px
+$media-tablet-desktop: 1400px
 
 @mixin media-phone-s
   @media (max-width: $media-phone-s)
@@ -35,6 +36,10 @@ $media-tablet-desktop: 1200px
 
 @mixin media-tablet-landscape 
   @media (max-width: $media-tablet-landscape)
+    @content 
+
+@mixin media-desktop-s
+  @media (max-width: $media-tablet-desktop-s)
     @content 
 
 @mixin media-desktop 
