@@ -46,7 +46,9 @@ class Curriculum extends React.Component {
             <img className="pz-curriculum__image" src={require("../assets/images/about-us-curriculum.jpeg")} alt="" />
           </div>
         </div>
-        <EmptySpace small />
+        <EmptySpace 
+          small
+          className="pz-empty-space"/>
       </div>
     )
   }
