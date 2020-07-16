@@ -6,6 +6,7 @@ import BackgroundImage from '../assets/images/new-bg.jpeg'
 import ContactBanner from './ContactBanner'
 import WhyUs from './WhyUs'
 import CTABanner from './CTABanner'
+import ContactFormBanner from './ContactFormBanner'
 
 class ServicesPage extends React.Component{
   render(){
@@ -24,10 +25,11 @@ class ServicesPage extends React.Component{
 
       <Services />
 
-      <ContactBanner />
 
       <WhyUs />
 
+      <EmptySpace />
+      <ContactFormBanner />
     </div>
     )
   }

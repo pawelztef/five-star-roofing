@@ -31,8 +31,11 @@ class AboutUsBanner extends React.Component {
 
     return(
       <div className="pz-about-us-banner__wrapper">
-        <Section small> 
+        <Section 
+          small
+          title="Your Expert Service for All Apsects of Roofing"> 
           { cards }
+
         </Section>
       </div>
     )
