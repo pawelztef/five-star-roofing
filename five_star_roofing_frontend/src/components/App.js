@@ -6,6 +6,7 @@ import NavigationBar from './NavigationBar'
 import MobileNav from './MobileNav'
 import Footer from './Footer'
 import EmptySpace from './EmptySpace'
+import ScrollToTop from './ScrollToTop'
 
 import HomePage from './HomePage'
 import AboutPage from './AboutPage'
@@ -32,6 +33,7 @@ class App extends React.Component {
         <div className="pz-responsivnes-indicator"></div>
 
         <Router>
+          <ScrollToTop />
           <div className="pz-body-wrapper">
 
             <NavigationBar mobileMenuToggleHandler={this.mobileMenuToggleHandler} />
@@ -72,15 +74,15 @@ class App extends React.Component {
 
               )} />
 
-            </div>
-
-            <Footer />
           </div>
-        </Router>
 
-      </div>
+          <Footer />
+        </div>
+      </Router>
+
+    </div>
     )
   }
-  }
+}
 
-  export default App
+export default App
