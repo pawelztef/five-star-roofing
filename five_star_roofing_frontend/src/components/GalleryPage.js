@@ -120,7 +120,6 @@ const galleryPage = () => {
           enableImageSelection={false}
           images={IMAGES}/>
       </div>
-      <EmptySpace />
       <ContactFormBanner />
     </div>
   )
