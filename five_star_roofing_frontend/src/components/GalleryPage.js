@@ -8,6 +8,7 @@ import Gallery from 'react-grid-gallery'
 import GetQuote from './GetQuote'
 import Section from './Section'
 import DecoLine from './DecoLine'
+import ContactFormBanner from './ContactFormBanner'
 
 
 import gutter1 from '../assets/images/gallery/gutter1.png'
@@ -114,12 +115,13 @@ const galleryPage = () => {
       <h1 className="pz-section__title">Our recent projects</h1>
       <DecoLine marginBottom={40} width={150} className="pz-decoline" />
       <EmptySpace small />
-      <div className="pz-container">
+      <div className="pz-container pz-gallery__container">
         <Gallery 
           enableImageSelection={false}
           images={IMAGES}/>
       </div>
       <EmptySpace />
+      <ContactFormBanner />
     </div>
   )
 }
