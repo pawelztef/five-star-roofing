@@ -18,7 +18,8 @@ class Curriculum extends React.Component {
         <div className="pz-container">
           <div className="pz-curriculum__column">
             <h4 className="pz-curriculum__title">Five Star Roofing</h4>
-            <DecoLine />
+            <DecoLine 
+              className="pz-decoline"/>
             <p className="pz-curriculum__content">
               Five Star Roofing prides on being a leader in this industry. We have been around 
               for more than 20 years, are a local family owned business, and offer a wide 
