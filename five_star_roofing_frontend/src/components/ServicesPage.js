@@ -12,8 +12,6 @@ class ServicesPage extends React.Component{
   render(){
     return(
       <div className="pz-services__page">
-
-
       <div className="pz-services__page-banner-wrapper">
         <Banner 
           bannerTitle="Services"
@@ -21,13 +19,8 @@ class ServicesPage extends React.Component{
           bannerImage={BackgroundImage} />
         <CTABanner />
       </div>
-      <EmptySpace />
-
       <Services />
-
-
       <WhyUs />
-
       <EmptySpace />
       <ContactFormBanner />
     </div>

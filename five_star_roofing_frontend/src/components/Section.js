@@ -15,7 +15,7 @@ const section = (props) => {
         <h1 className="pz-section__title">{props.title}</h1>
         <DecoLine marginBottom={40} width={150} className="pz-decoline" />
         <EmptySpace  
-          small={props.small}
+          small
           className="pz-empty-space"/>
       </>
       }

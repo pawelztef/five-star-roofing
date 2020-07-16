@@ -9,6 +9,11 @@ class Curriculum extends React.Component {
 
     return(
       <div className="pz-curriculum__wrapper">
+        <h1 className="pz-section__title">Our Story</h1>
+        <DecoLine marginBottom={40} width={150} className="pz-decoline" />
+        <EmptySpace  
+          small
+          className="pz-empty-space"/>
         <EmptySpace small />
         <div className="pz-container">
           <div className="pz-curriculum__column">

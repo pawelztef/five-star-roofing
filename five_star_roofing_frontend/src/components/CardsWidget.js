@@ -36,9 +36,11 @@ class CardsWidget extends React.Component {
     })
 
     return(
-      <Section small >
-        { cards }
-      </Section>
+      <div className="pz-cards-widget">
+        <Section small>
+          { cards }
+        </Section>
+      </div>
     )
   }
 }
