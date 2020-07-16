@@ -14,3 +14,13 @@
          width: 80%
     @include media-phone
 
+.pz-cards-widget
+  @include media-desktop
+  @include media-desktop-s
+  @include media-tablet-landscape
+  @include media-tablet-portrait
+  @include media-phone
+    .pz-empty-space:nth-of-type(3)
+      display: none
+  @include media-phone-s
+

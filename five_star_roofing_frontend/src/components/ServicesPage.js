@@ -6,13 +6,12 @@ import BackgroundImage from '../assets/images/new-bg.jpeg'
 import ContactBanner from './ContactBanner'
 import WhyUs from './WhyUs'
 import CTABanner from './CTABanner'
+import ContactFormBanner from './ContactFormBanner'
 
 class ServicesPage extends React.Component{
   render(){
     return(
       <div className="pz-services__page">
-
-
       <div className="pz-services__page-banner-wrapper">
         <Banner 
           bannerTitle="Services"
@@ -20,14 +19,10 @@ class ServicesPage extends React.Component{
           bannerImage={BackgroundImage} />
         <CTABanner />
       </div>
-      <EmptySpace />
-
+      <EmptySpace small />
       <Services />
-
-      <ContactBanner />
-
       <WhyUs />
-
+      <ContactFormBanner />
     </div>
     )
   }

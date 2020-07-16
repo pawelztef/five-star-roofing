@@ -5,6 +5,7 @@ import CTABanner from './CTABanner'
 import AboutUsBanner from './AboutUsBanner'
 import EmptySpace from './EmptySpace'
 import Curriculum from './Curriculum'
+import ContactFormBanner from './ContactFormBanner'
 
 class AboutPage extends React.Component{
   render(){
@@ -21,6 +22,7 @@ class AboutPage extends React.Component{
         <Curriculum />
         <EmptySpace />
         <AboutUsBanner />
+        <ContactFormBanner />
       </>
     )
   }

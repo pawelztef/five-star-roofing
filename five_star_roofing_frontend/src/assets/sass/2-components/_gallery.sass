@@ -1,2 +1,17 @@
 .ReactGridGallery_tile:last-of-type
   margin-bottom: 120px !important
+
+.pz-gallery__wrapper
+  .pz-container
+    @include media-phone
+      width: 90%
+  .pz-gallery__container
+    display: inline-block
+    @include media-desktop
+    @include media-desktop-s
+    @include media-tablet-landscape
+    @include media-tablet-portrait
+    @include media-phone
+      width: 90%
+    @include media-phone-s
+
