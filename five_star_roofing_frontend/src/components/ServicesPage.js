@@ -19,9 +19,9 @@ class ServicesPage extends React.Component{
           bannerImage={BackgroundImage} />
         <CTABanner />
       </div>
+      <EmptySpace small />
       <Services />
       <WhyUs />
-      <EmptySpace />
       <ContactFormBanner />
     </div>
     )

@@ -1,17 +1,35 @@
 .pz-why-us__wrapper
   .pz-section__wrapper
     background: $fsr-wt
+    @include media-desktop
+    @include media-desktop-s
+    @include media-tablet-landscape
+      .pz-empty-space:nth-of-type(3)
+        height: 1.5rem !important
+    @include media-tablet-portrait
+    @include media-phone
+    @include media-phone-s
     .pz-section__row
       .pz-container
+        justify-content: center
+        flex-wrap: nowrap
+        @include media-desktop
+        @include media-desktop-s
+        @include media-tablet-landscape
+          display: block
+        @include media-tablet-portrait
+        @include media-phone
+        @include media-phone-s
+
         .pz-card-wrapper
-          flex: 0 0 50%
+          flex: 0 0 auto
           margin-bottom: 40px
-          @include media-desktop
+          @include media-desktop-s
+            flex: 0 1 auto
           @include media-tablet-landscape
+            margin: 15px
           @include media-tablet-portrait
-            flex: 0 0 100%
           @include media-phone
-            flex: 0 0 100%
           .pz-card__item
             padding: 0 15px
   .pz-card
@@ -28,11 +46,12 @@
       margin-top: 30px
       @include media-desktop
       @include media-tablet-landscape
+        margin: 0 auto
       @include media-tablet-portrait
       @include media-phone
       span
         margin-bottom: 25px
-        text-align: left
+        text-align: center
         &::before
           content: "✓  "
           color: $fsr-1
