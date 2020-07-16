@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
 import { MdPhoneInTalk } from "react-icons/md";
 
@@ -11,35 +11,40 @@ export default function MainMenu() {
       <Nav className="ml-auto" >
         <Nav.Link 
           exact="true"
-          as={Link}
+          as={NavLink}
+          activeClassName="active"
           className="pz-menu__item"
           href="/"
           to="/">
           Home
         </Nav.Link>
         <Nav.Link 
-          as={Link}
+          as={NavLink}
+          activeClassName="active"
           className="pz-menu__item"
           href="/services"
           to="/services">
           Services
         </Nav.Link>
         <Nav.Link 
-          as={Link}
+          as={NavLink}
+          activeClassName="active"
           className="pz-menu__item"
           href="/gallery"
           to="/gallery">
           Gallery
         </Nav.Link>
         <Nav.Link 
-          as={Link}
+          as={NavLink}
+          activeClassName="active"
           className="pz-menu__item"
           href="/about"
           to="/about">
           About
         </Nav.Link>
         <Nav.Link 
-          as={Link}
+          as={NavLink}
+          activeClassName="active"
           className="pz-menu__item"
           href="/contact"
           to="/contact">
