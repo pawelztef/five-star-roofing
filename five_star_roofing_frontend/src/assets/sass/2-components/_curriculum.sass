@@ -11,6 +11,8 @@
         flex-direction: column
       @include media-phone
       .pz-curriculum__column
+        .pz-decoline
+          display: none
         &:first-of-type
           flex: 0 0 50%
           background: $fsr-wt
@@ -33,11 +35,12 @@
   &__title
     margin-bottom: 5px
     text-transform: uppercase
-    color: $fsr-1
+    color: $fsr-4
     @include media-desktop
     @include media-tablet-landscape
     @include media-tablet-portrait
-      font-size: 2rem
+      font-size: 1.6rem
+      display: none
     @include media-phone
   &__content
     color: $fsr-4
